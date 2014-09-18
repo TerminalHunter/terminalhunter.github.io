@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Dwarf Thing</title>
+<link rel="stylesheet" type="text/css" href="dwarfy.css">
+<script src="../scripts/numbertoword.js"></script>
+<script>
+window.onload = function(){
+var d = new Date();
+if(d.getMonth() > 6){
+document.getElementById("Age").innerHTML = convert(parseInt(d.getFullYear()) - 1992);
+}else if(d.getMonth() == 6 && d.getDate() >= 21){
+document.getElementById("Age").innerHTML = convert(parseInt(d.getFullYear()) - 1992);
+}else{
+document.getElementById("Age").innerHTML = convert(parseInt(d.getFullYear()) - 1992 -1);
+}
+}
+</script>
+
+</head>
+
+<body>
+<div id="Header"><span id="headertext">&nbsp;&nbsp;Hunter Dewing, "Hunter Dewing", programmer&nbsp;&nbsp;</span></div>
+<div id="Text">
+<div id="Thoughts"><br>
+Hunter Dewing has been quite content lately. He has been exhausted lately. He had a pretty decent drink lately. He made a friend recently. He was irritated by the sun lately.</div>
+<div id="Familial_Status">He is a casual worshipper of the Flying Spaghetti Monster.</div>
+<div id="Civilization_Membership">He is a citizen of The United States. He is a former member of The University of Virginia. He is a former member of The Student Game Developers at The University of Virginia. He is the former president of The Brony Club at the University of Virginia. He arrived at Tidewater on the 20th of Felsite in the year 2014.</div>
+<div id="Age_and_date_of_birth">He is <span style="display: inline" id="Age"></span> years old, born on the 21st of Malachite in the year 1992.</div>
+<div id="Physical_Description">He is tall. His eyes are green. His hair is straight. His long hair is neatly combed. His hair is dirty blonde. </div>
+<div id="Physical_Attributes">He is agile and virtually never sick,
+<span id="bPhysical_Attributes">but he is quick to tire and flimsy.</span></div>
+<div id="Preferences">Hunter Dewing likes rose quartz, two-handed swords, the color purple, small horses for their friendship, and cats for their aloofness. When possible, he prefers to consume pig, honeyed pretzels, and hard cider. He absolutely detests silverfish.</div>
+<div id="Mental_Attributes">He has awesome intellectual powers, an iron will, good creativity, a deep well of patience, and an amazing memory,<span id="bMental_Attributes"> but he has a little difficulty with words and next to no natural musical ability.</span></div>
+<div id="Ideals">Like others in his culture, he
+<span id="Beliefs">He personally believes </span>
+<span id="Goals">He dreams of crafting a masterwork video game someday.</span></div>
+<div id="Facets">He does not generally respond to emotional appeals. He has a calm demeanor. He tries to keep his things orderly. He plays with his facial hair when he's thinking.</div>
+<div id="Last bit"><br>A medium-sized creature prone to great ambition.</div>
+</div>
+</body>
+
+</html>
