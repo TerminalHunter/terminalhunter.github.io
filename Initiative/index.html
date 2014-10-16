@@ -38,7 +38,7 @@ function initialize() {
     isPng: true,
       mapTypeControl: false,
       streetViewControl: false,
-        center: new google.maps.LatLng(0,0),     
+        center: new google.maps.LatLng(65, -56),     
       zoom: 3,
     mapTypeControlOptions: {
       mapTypeIds: ['custom', google.maps.MapTypeId.ROADMAP],
@@ -50,7 +50,7 @@ map.mapTypes.set('custom',CustomMapType);
 map.setMapTypeId('custom');
 
 
-var marker1latlng = new google.maps.LatLng(0,0);
+var marker1latlng = new google.maps.LatLng(65, -56);
 var marker = new google.maps.Marker({
 	position: marker1latlng,
 	map: map,
