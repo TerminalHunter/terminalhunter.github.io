@@ -66,7 +66,19 @@ var marker2 = new google.maps.Marker({
 var marker3 = new google.maps.Marker({
 	position: new google.maps.LatLng(-40,30),
 	map: map,
-	title: 'Hello world 3.'
+	title: 'Hello world 3.',
+});
+
+google.maps.event.addListener(marker, 'click', function(){
+	infowindow.open(map,marker);
+});
+
+google.maps.event.addListener(marker2, 'click', function(){
+	infowindow.open(map,marker2);
+});
+
+google.maps.event.addListener(marker3, 'click', function(){
+	infowindow.open(map,marker3);
 });
 
 }
