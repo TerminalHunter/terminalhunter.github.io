@@ -69,16 +69,28 @@ var marker3 = new google.maps.Marker({
 	title: 'Hello world 3.',
 });
 
+var infowindow1 = new google.maps.InfoWindow({
+	content: "1"
+});
+
+var infowindow2 = new google.maps.InfoWindow({
+	content: "2"
+});
+
+var infowindow3 = new google.maps.InfoWindow({
+	content: "2"
+});
+
 google.maps.event.addListener(marker, 'click', function(){
-	infowindow.open(map,marker);
+	infowindow1.open(map,marker);
 });
 
 google.maps.event.addListener(marker2, 'click', function(){
-	infowindow.open(map,marker2);
+	infowindow2.open(map,marker2);
 });
 
 google.maps.event.addListener(marker3, 'click', function(){
-	infowindow.open(map,marker3);
+	infowindow3.open(map,marker3);
 });
 
 }
