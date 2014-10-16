@@ -39,7 +39,7 @@ function initialize() {
       mapTypeControl: false,
       streetViewControl: false,
         center: new google.maps.LatLng(65, -56),     
-      zoom: 3,
+      zoom: 5,
     mapTypeControlOptions: {
       mapTypeIds: ['custom', google.maps.MapTypeId.ROADMAP],
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
@@ -58,7 +58,7 @@ var marker = new google.maps.Marker({
 });
 
 var marker2 = new google.maps.Marker({
-	position: new google.maps.LatLng(30, -50),
+	position: new google.maps.LatLng(30, -40),
 	map: map,
 	title: 'Hello world 2.'
 });
