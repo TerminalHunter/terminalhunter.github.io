@@ -55,29 +55,39 @@ map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
 map.mapTypes.set('custom',CustomMapType);
 map.setMapTypeId('custom');
 
+//init Icon images
+
+var exclamation = 'icons/ex-icon.png';
+var plant = 'icons/plant-icon.png';
+
+//init markers
 
 var GuildHouseMarker = new google.maps.Marker({
 	position: GuildHallCoords,
 	map: map,
-	title: 'GuildHouse'
+	title: 'GuildHouse',
+	icon: exclamation
 });
 
 var SpoonMarker = new google.maps.Marker({
 	position: SpoonsFarmCoords,
 	map: map,
-	title: "Spoonsfarms"
+	title: "Spoonsfarms",
+	icon: plant
 });
 
 var OtherMarker = new google.maps.Marker({
 	position: ThatOtherGuyFarmCoords,
 	map: map,
 	title: 'Otherfarm',
+	icon: plant
 });
 
 var TerminalMarker = new google.maps.Marker({
 	position: TerminalFarmCoords,
 	map: map,
 	title: 'MyFarm',
+	icon: plant
 });
 
 var infowindow1 = new google.maps.InfoWindow({
