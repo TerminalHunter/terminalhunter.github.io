@@ -31,6 +31,12 @@ CustomMapType.prototype.name = "Custom";
 CustomMapType.prototype.alt = "Tile Coordinate Map Type";
 var map;
 var CustomMapType = new CustomMapType();
+
+var GuildHallCoords = new google.maps.LatLng(77.70223385727981, -141.0205078125);
+var SpoonsFarmCoords = new google.maps.LatLng(77.20104488844608, -146.436767578125);
+var ThatOtherGuyFarmCoords = new google.maps.LatLng(77.21077648510965, -146.129150390625);
+var TerminalFarmCoords = new google.maps.LatLng(78.150295483994, -129.57275390625);
+
 function initialize() {
   var mapOptions = {
       minZoom: 2,
@@ -38,8 +44,8 @@ function initialize() {
     isPng: true,
       mapTypeControl: false,
       streetViewControl: false,
-        center: new google.maps.LatLng(80, -100),     
-      zoom: 5,
+        center: GuildHallCoords,     
+      zoom: 6,
     mapTypeControlOptions: {
       mapTypeIds: ['custom', google.maps.MapTypeId.ROADMAP],
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
@@ -50,47 +56,60 @@ map.mapTypes.set('custom',CustomMapType);
 map.setMapTypeId('custom');
 
 
-var marker1latlng = new google.maps.LatLng(65, -56);
-var marker = new google.maps.Marker({
-	position: marker1latlng,
+var GuildHouseMarker = new google.maps.Marker({
+	position: GuildHallCoords,
 	map: map,
-	title: 'Hello world.'
+	title: 'GuildHouse'
 });
 
-var marker2 = new google.maps.Marker({
-	position: new google.maps.LatLng(77,-130),
+var SpoonMarker = new google.maps.Marker({
+	position: SpoonsFarmCoords,
 	map: map,
-	title: 'Hello world 2.'
+	title: "Spoonsfarms"
 });
 
-var marker3 = new google.maps.Marker({
-	position: new google.maps.LatLng(75,-60),
+var OtherMarker = new google.maps.Marker({
+	position: ThatOtherGuyFarmCoords,
 	map: map,
-	title: 'Hello world 3.',
+	title: 'Otherfarm',
+});
+
+var TerminalMarker = new google.maps.Marker({
+	position: TerminalFarmCoords,
+	map: map,
+	title: 'MyFarm',
 });
 
 var infowindow1 = new google.maps.InfoWindow({
-	content: "1"
+	content: "The Guild House and Chests"
 });
 
 var infowindow2 = new google.maps.InfoWindow({
-	content: "2"
+	content: "Spoons' Large and Small farms"
 });
 
 var infowindow3 = new google.maps.InfoWindow({
-	content: "3"
+	content: "Another guild farm.... forgot who owns this one"
 });
 
-google.maps.event.addListener(marker, 'click', function(){
-	infowindow1.open(map,marker);
+var infowindow4 = new google.maps.InfoWindow({
+	content: "Terminal's farm, but not open to the guild 'cause he's using it"
 });
 
-google.maps.event.addListener(marker2, 'click', function(){
-	infowindow2.open(map,marker2);
+google.maps.event.addListener(GuildHouseMarker, 'click', function(){
+	infowindow1.open(map,GuildHouseMarker);
 });
 
-google.maps.event.addListener(marker3, 'click', function(){
-	infowindow3.open(map,marker3);
+google.maps.event.addListener(SpoonMarker, 'click', function(){
+	infowindow2.open(map,SpoonMarker);
+});
+
+google.maps.event.addListener(OtherMarker, 'click', function(){
+	infowindow3.open(map,OtherMarker);
+});
+
+google.maps.event.addListener(TerminalMarker, 'click', function(){
+	infowindow4.open(map,TerminalMarker);
 });
 
 google.maps.event.addListener(map, 'click', function(e){
