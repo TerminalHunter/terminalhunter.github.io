@@ -65,45 +65,45 @@ var plant = 'icons/plant-icon.png';
 var GuildHouseMarker = new google.maps.Marker({
 	position: GuildHallCoords,
 	map: map,
-	title: 'GuildHouse',
+	title: 'Guild House',
 	icon: exclamation
 });
 
 var SpoonMarker = new google.maps.Marker({
 	position: SpoonsFarmCoords,
 	map: map,
-	title: "Spoonsfarms",
+	title: "Spoons' farms",
 	icon: plant
 });
 
 var OtherMarker = new google.maps.Marker({
 	position: ThatOtherGuyFarmCoords,
 	map: map,
-	title: 'Otherfarm',
+	title: 'Other farm',
 	icon: plant
 });
 
 var TerminalMarker = new google.maps.Marker({
 	position: TerminalFarmCoords,
 	map: map,
-	title: 'MyFarm',
+	title: "Terminal's Farm",
 	icon: plant
 });
 
 var infowindow1 = new google.maps.InfoWindow({
-	content: "The Guild House and Chests"
+	content: "The Guild House and Chests<br><br>1x Swept Roof Villa"
 });
 
 var infowindow2 = new google.maps.InfoWindow({
-	content: "Spoons' Large and Small farms"
+	content: "Spoons' Farms<br><br>1x 16x16 Farm<br>1x 8x8 Farm"
 });
 
 var infowindow3 = new google.maps.InfoWindow({
-	content: "Another guild farm.... forgot who owns this one"
+	content: "Another guild farm.... forgot who owns this one<br><br>1x 16x16 Farm"
 });
 
 var infowindow4 = new google.maps.InfoWindow({
-	content: "Terminal's farm - not set to guild, so ask before using"
+	content: "Terminal's farm - not set to guild, so ask before using<br><br>1x 8x8 Farm"
 });
 
 google.maps.event.addListener(GuildHouseMarker, 'click', function(){
