@@ -8,10 +8,24 @@
   <y>-106.4794921875</y>
 </marker>
 <marker>
-  <title>Terminals Farm</title>
+  <title>Terminal's Farm</title>
   <info>1x Small Scarecrow Garden</info>
-  <icon>plant-icon.png</icon>
+  <icon>icons/plant-icon.png</icon>
   <x>64.23</x>
   <y>-84.2431640625</y>
+</marker>
+<marker>
+  <title>Spoons' Farms</title>
+  <info>1x LargeScarecrow Farm<br>1x Small Scarecrow Garden</info>
+  <icon>icons/plant-icon.png</icon>
+  <x>60.21799073323445</x>
+  <y>-117.09228515625</y>
+</marker>
+<marker>
+  <title>Alverna's Farm</title>
+  <info>1x Large Scarecrow Farm</info>
+  <icon>icons/plant-icon.png</icon>
+  <x>60.22799073323445</x>
+  <y>-116.455078125</y>
 </marker>
 </markerlist>

@@ -74,13 +74,6 @@ CustomMapType.prototype.alt = "Tile Coordinate Map Type";
 var map;
 var CustomMapType = new CustomMapType();
 
-// --- EW, HARDCODED MAP COORDS ---
-
-var GuildHallCoords = new google.maps.LatLng(62.31900278603092, -106.4794921875);
-var SpoonsFarmCoords = new google.maps.LatLng(60.21799073323445, -117.09228515625);
-var ThatOtherGuyFarmCoords = new google.maps.LatLng(60.22799073323445, -116.455078125);
-var TerminalFarmCoords = new google.maps.LatLng(64.23, -84.2431640625);
-
 // --- MAP INIT ---
 
 function initialize() {
@@ -101,11 +94,6 @@ map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
 map.mapTypes.set('custom',CustomMapType);
 map.setMapTypeId('custom');
 
-// --- Icon Images --- 
-
-var exclamation = 'icons/ex-icon.png';
-var plant = 'icons/plant-icon.png';
-
 // --- TAKE THE STUFF FROM XML AND MAKE MARKERS
 
 for(var i = 0;i<markerArray.length;i++){
@@ -117,35 +105,7 @@ for(var i = 0;i<markerArray.length;i++){
 	});
 }
 
-// --- EW, HARDCODED MAP MARKERS ---
-
-//var GuildHouseMarker = new google.maps.Marker({
-//	position: GuildHallCoords,
-//	map: map,
-//	title: 'Guild House',
-//	icon: exclamation
-//});
-
-var SpoonMarker = new google.maps.Marker({
-	position: SpoonsFarmCoords,
-	map: map,
-	title: "Spoons' farms",
-	icon: plant
-});
-
-var OtherMarker = new google.maps.Marker({
-	position: ThatOtherGuyFarmCoords,
-	map: map,
-	title: 'Other farm',
-	icon: plant
-});
-
-var TerminalMarker = new google.maps.Marker({
-	position: TerminalFarmCoords,
-	map: map,
-	title: "Terminal's Farm",
-	icon: plant
-});
+// --- EW, HARDCODED ---
 
 //var infowindow1 = new google.maps.InfoWindow({
 //	content: "The Guild House and Chests<br><br>1x Swept Roof Villa"
