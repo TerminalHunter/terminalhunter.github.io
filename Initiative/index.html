@@ -39,11 +39,11 @@ for(i=0;i<xmlMarkers.length;i++){
 	console.log("shit");
 	
 	var newMarker = {
-		title:xmlDoc.getElementsByTagName("title")[i].childNode[0].nodeValue,
-		info:xmlDoc.getElementsByTagName("info")[i].childNode[0].nodeValue,
-		icon:xmlDoc.getElementsByTagName("icon")[i].childNode[0].nodeValue,
-		x:xmlDoc.getElementsByTagName("x")[i].childNode[0].nodeValue,
-		y:xmlDoc.getElementsByTagName("y")[i].childNode[0].nodeValue
+		title:xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue,
+		info:xmlDoc.getElementsByTagName("info")[i].childNodes[0].nodeValue,
+		icon:xmlDoc.getElementsByTagName("icon")[i].childNodes[0].nodeValue,
+		x:xmlDoc.getElementsByTagName("x")[i].childNodes[0].nodeValue,
+		y:xmlDoc.getElementsByTagName("y")[i].childNodes[0].nodeValue
 	};
 	
 	markerArray.push(newMarker);
