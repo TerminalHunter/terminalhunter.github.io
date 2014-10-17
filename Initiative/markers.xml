@@ -2,28 +2,28 @@
 <markerlist>
 <marker>
   <title>Guild House</title>
-  <info>1x Swept Roof Villa</info>
+  <info><![CDATA[<div style="min-width:200px;">1x Swept Roof Villa</div>]]></info>
   <icon>icons/ex-icon.png</icon>
   <x>62.31900278603092</x>
   <y>-106.4794921875</y>
 </marker>
 <marker>
   <title>Terminal's Farm</title>
-  <info>1x Small Scarecrow Garden</info>
+  <info><![CDATA[<div style="min-width:200px;">1x Small Scarecrow Garden</div>]]></info>
   <icon>icons/plant-icon.png</icon>
   <x>64.23</x>
   <y>-84.2431640625</y>
 </marker>
 <marker>
   <title>Spoons' Farms</title>
-  <info><![CDATA[<div style="min-width:350px;">1x Large Scarecrow Farm<br>1x Small Scarecrow Garden</div>]]></info>
+  <info><![CDATA[<div style="min-width:200px;">1x Large Scarecrow Farm<br>1x Small Scarecrow Garden</div>]]></info>
   <icon>icons/plant-icon.png</icon>
   <x>60.21799073323445</x>
   <y>-117.09228515625</y>
 </marker>
 <marker>
   <title>Alverna's Farm</title>
-  <info>1x Large Scarecrow Farm</info>
+  <info><![CDATA[<div style="min-width:200px;">1x Large Scarecrow Farm</div>]]></info>
   <icon>icons/plant-icon.png</icon>
   <x>60.22799073323445</x>
   <y>-116.455078125</y>
