@@ -11,6 +11,26 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
 <title>Initiative Gaming Archeage Map</title> 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script>
+//--- PREPARE THE XML! ---
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","markers.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+
+console.log(xmlDoc.getElementsByTagName("body")[0].childNodes[0].nodeValue);
+
+</script>
+
 <script>
 // --- MAP SCRIPT ---
 function CustomMapType() {
