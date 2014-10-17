@@ -124,6 +124,8 @@ var infowindow = new google.maps.InfoWindow({
 console.log(markerArray[0].info);
 
 for(var i = 0;i < markerArray.length;i++){
+	console.log(i);
+	console.log(markerArray[i].info);
 	google.maps.event.addListener(markerArray[i], 'click',function(){
 		infowindow.setContent(markerArray[i].info);
 		infowindow.open(map, markerArray[i]);
