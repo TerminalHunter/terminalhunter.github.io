@@ -112,16 +112,12 @@ for(var i = 0;i<markerInfoArray.length;i++){
 // --- MAKE INFOBOXES APPEAR WHEN CLICKING MARKERS ---
 
 var infowindow = new google.maps.InfoWindow({
-	content: "Choo-choo"
 });
 
-for(var i = 0;i < markerArray.length;i++){
-	var tet = markerArray[i].info;
-	console.log(tet);
-	google.maps.event.addListener(markerArray[i],'click',function(){
+google.maps.event.addListener(markerArray[0],'click',function(){
 		infowindow.close();
-		infowindow.setContent(tet);
-		infowindow.open(map, markerArray[i]);
+		infowindow.setContent(markerArray[0].info);
+		infowindow.open(map, markerArray[0]);
 	});
 }
 
