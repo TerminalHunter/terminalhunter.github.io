@@ -120,7 +120,8 @@ var infowindow = new google.maps.InfoWindow({
 
 function addInfoWindow(marker, information){
 	google.maps.event.addListener(marker, 'click', function(){
-		infowindow.close();
+		if(infowindow.getMap())
+			infowindow.close();
 		infowindow.setContent(information);
 		infowindow.open(map,marker);
 	});
