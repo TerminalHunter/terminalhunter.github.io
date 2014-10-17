@@ -112,15 +112,6 @@ for(var i = 0;i<markerInfoArray.length;i++){
 	
 }
 
-
-// --- EW, HARDCODED ---
-
-google.maps.event.addListener(map, 'click', function(e){
-	console.log(e.latLng.toString());
-});
-
-}
-
 // --- MAKE INFOBOXES APPEAR WHEN CLICKING MARKERS ---
 
 function addInfoWindow(marker, information){
@@ -129,7 +120,15 @@ function addInfoWindow(marker, information){
 			content: information
 		});
 		infowindow.open(map,marker);
-	}
+	});
+}
+
+// --- EW, HARDCODED ---
+
+google.maps.event.addListener(map, 'click', function(e){
+	console.log(e.latLng.toString());
+});
+
 }
 </script>
 
