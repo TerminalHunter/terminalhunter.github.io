@@ -16,7 +16,7 @@
 </marker>
 <marker>
   <title>Spoons' Farms</title>
-  <info><![CDATA[<div style="height:100px;">1x Large Scarecrow Farm<br>1x Small Scarecrow Garden</div>]]></info>
+  <info><![CDATA[<div style="min-width:350px;">1x Large Scarecrow Farm<br>1x Small Scarecrow Garden</div>]]></info>
   <icon>icons/plant-icon.png</icon>
   <x>60.21799073323445</x>
   <y>-117.09228515625</y>
