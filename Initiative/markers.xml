@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note>
-  <to> Tove</to>
-  <from>Jani</from>
-  <heading>Reminder</heading>
-  <body>Don't forget me this weekend!</body>
-</note>
+<marker>
+  <title>Guild House</title>
+  <info>1x Swept Roof Villa</info>
+  <icon>exclamation</icon>
+  <x>62.31900278603092</x>
+  <y>-106.4794921875</y>
+</marker>
