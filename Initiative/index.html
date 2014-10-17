@@ -38,8 +38,6 @@ var xmlMarkers = xmlDoc.getElementsByTagName("marker");
 // --- PUT SHIT IN OBJECTS TO USE LATER! ---
 
 for(i=0;i<xmlMarkers.length;i++){
-	console.log("shit");
-	
 	var newMarker = {
 		title:xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue,
 		info:xmlDoc.getElementsByTagName("info")[i].childNodes[0].nodeValue,
@@ -49,7 +47,6 @@ for(i=0;i<xmlMarkers.length;i++){
 	};
 	
 	markerInfoArray.push(newMarker);
-	
 }
 
 </script>
@@ -116,6 +113,8 @@ for(var i = 0;i<markerInfoArray.length;i++){
 	infoBoxen.push(tempbox);
 	
 }
+
+console.log(infoBoxen[0].content);
 
 // --- MAKE INFOBOXES APPEAR WHEN CLICKING MARKERS ---
 
