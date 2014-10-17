@@ -115,10 +115,13 @@ for(var i = 0;i<markerInfoArray.length;i++){
 var infowindow = new google.maps.InfoWindow({
 });
 
+var temptext;
+var tempmarker;
+
 for(var i = 0; i < markerArray.length; i++){
 
-var tempmarker = markerArray[i];
-var temptext = markerArray[i].info;
+tempmarker = markerArray[i];
+temptext = markerArray[i].info;
 
 google.maps.event.addListener(tempmarker,'click',function(){
 		infowindow.close();
