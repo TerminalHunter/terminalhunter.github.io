@@ -107,12 +107,6 @@ for(var i = 0;i<markerInfoArray.length;i++){
 	
 	markerArray.push(temp);
 	
-	//var tempbox = new google.maps.InfoWindow({
-	//	content: markerInfoArray[i].info
-	//});
-	//
-	//infoBoxen.push(tempbox);
-	
 }
 
 // --- MAKE INFOBOXES APPEAR WHEN CLICKING MARKERS ---
@@ -121,12 +115,11 @@ var infowindow = new google.maps.InfoWindow({
 	content: "Choo-choo"
 });
 
-console.log(markerArray[0].info);
-
 for(var i = 0;i < markerArray.length;i++){
 	var tet = markerArray[i].info;
 	console.log(tet);
 	google.maps.event.addListener(markerArray[i],'click',function(){
+		infowindow.close();
 		infowindow.setContent(tet);
 		infowindow.open(map, markerArray[i]);
 	});
