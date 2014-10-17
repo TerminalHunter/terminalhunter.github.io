@@ -12,7 +12,9 @@
 <title>Initiative Gaming Archeage Map</title> 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="xmlLoader.js"></script>
-</head> 
+</head>
+
+
 <body onload="initialize()"> 
 <div id="static" style="position: fixed;">Map is mostly under construction and may not work at any given time...</div>
 <div id="map_canvas" style="background: #1B2D33;"></div> 
@@ -46,6 +48,13 @@ var SpoonsFarmCoords = new google.maps.LatLng(60.21799073323445, -117.0922851562
 var ThatOtherGuyFarmCoords = new google.maps.LatLng(60.22799073323445, -116.455078125);
 var TerminalFarmCoords = new google.maps.LatLng(64.23, -84.2431640625);
 
+// --- LOAD MARKERS FROM XML ---
+
+xmlDoc = loadXMLDoc("markers.xml");
+console.log("it gets this far");
+var title = xmlDoc.getElementsByTagName("title");
+console.log(title[0].childNodes[0].nodeValue);
+
 // --- MAP INIT ---
 
 function initialize() {
@@ -70,13 +79,6 @@ map.setMapTypeId('custom');
 
 var exclamation = 'icons/ex-icon.png';
 var plant = 'icons/plant-icon.png';
-
-// --- LOAD MARKERS FROM XML ---
-
-xmlDoc = loadXMLDoc("markers.xml");
-console.log("it gets this far");
-var title = xmlDoc.getElementsByTagName("title");
-console.log(title[0].childNodes[0].nodeValue);
 
 // --- EW, HARDCODED MAP MARKERS ---
 
