@@ -120,7 +120,8 @@ function addInfoWindow(marker, information){
 			content: information
 		});
 		for(var i = 0; i < infoBoxen.length;i++){
-			infoBoxen[i].close();
+			if(infoBoxen[i].getMap())
+				infoBoxen[i].close();
 		}
 		infowindow.open(map,marker);
 		infoBoxen.push(infowindow);
