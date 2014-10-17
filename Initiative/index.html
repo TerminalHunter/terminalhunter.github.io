@@ -122,7 +122,7 @@ for(var i = 0;i<markerInfoArray.length;i++){
 for(var i = 0;i<markerArray.length;i++){
 	google.maps.event.addListener(markerArray[i], 'click', function(){
 		infoBoxen[i].open(map,markerArray[i]);
-	}
+	});
 }
 
 // --- EW, HARDCODED ---
