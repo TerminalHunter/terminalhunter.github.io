@@ -119,6 +119,7 @@ console.log(infoBoxen[0].content);
 // --- MAKE INFOBOXES APPEAR WHEN CLICKING MARKERS ---
 
 for(var i = 0;i<markerArray.length;i++){
+	console.log("TOOT TOOT");
 	google.maps.event.addListener(markerArray[i], 'click', function(){
 		infoBoxen[i].open(map,markerArray[i]);
 	});
