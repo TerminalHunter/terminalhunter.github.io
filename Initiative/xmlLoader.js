@@ -30,3 +30,11 @@ else // ew, code for IE
   }
 return xmlDoc;
 }
+
+
+// --- LOAD MARKERS FROM XML ---
+
+xmlDoc = loadXMLDoc("http://terminalhunter.github.io/Initiative/markers.xml");
+console.log("it gets this far");
+var title = xmlDoc.getElementsByTagName("title");
+console.log(title[0].childNodes[0].nodeValue);

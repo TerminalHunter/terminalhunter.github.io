@@ -12,13 +12,6 @@
 <title>Initiative Gaming Archeage Map</title> 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="xmlLoader.js"></script>
-</head>
-
-
-<body onload="initialize()"> 
-<div id="static" style="position: fixed;">Map is mostly under construction and may not work at any given time...</div>
-<div id="map_canvas" style="background: #1B2D33;"></div> 
-
 <script>
 // --- MAP SCRIPT ---
 function CustomMapType() {
@@ -47,13 +40,6 @@ var GuildHallCoords = new google.maps.LatLng(62.31900278603092, -106.4794921875)
 var SpoonsFarmCoords = new google.maps.LatLng(60.21799073323445, -117.09228515625);
 var ThatOtherGuyFarmCoords = new google.maps.LatLng(60.22799073323445, -116.455078125);
 var TerminalFarmCoords = new google.maps.LatLng(64.23, -84.2431640625);
-
-// --- LOAD MARKERS FROM XML ---
-
-xmlDoc = loadXMLDoc("markers.xml");
-console.log("it gets this far");
-var title = xmlDoc.getElementsByTagName("title");
-console.log(title[0].childNodes[0].nodeValue);
 
 // --- MAP INIT ---
 
@@ -149,5 +135,11 @@ google.maps.event.addListener(map, 'click', function(e){
 }
 </script>
 
+</head> 
+
+
+<body onload="initialize()"> 
+<div id="static" style="position: fixed;">Map is mostly under construction and may not work at any given time...</div>
+<div id="map_canvas" style="background: #1B2D33;"></div> 
 </body>
 </html> 
