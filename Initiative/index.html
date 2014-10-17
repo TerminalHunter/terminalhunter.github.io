@@ -83,7 +83,7 @@ function initialize() {
     isPng: true,
       mapTypeControl: false,
       streetViewControl: false,
-        center: new google.mapsLatLng(markerArray[i].x,markerArray[i].y),     
+        center: new google.mapsLatLng(62.31900278603092,-106.4794921875),     
       zoom: 6,
     mapTypeControlOptions: {
       mapTypeIds: ['custom', google.maps.MapTypeId.ROADMAP],
@@ -150,7 +150,7 @@ google.maps.event.addListener(map, 'click', function(e){
 
 
 <body onload="initialize()"> 
-<div id="static" style="position: fixed;color:white;">Map is mostly under construction and may not work at any given time...</div>
+<div id="static" style="position: fixed;color:white;">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.</div>
 <div id="map_canvas" style="background: #1B2D33;"></div> 
 </body>
 </html> 
