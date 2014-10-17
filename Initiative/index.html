@@ -93,7 +93,7 @@ map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
 map.mapTypes.set('custom',CustomMapType);
 map.setMapTypeId('custom');
 
-// --- TAKE THE STUFF FROM XML AND MAKE MARKERS AND INFO BOXEN
+// --- TAKE THE STUFF FROM XML AND MAKE MARKERS
 
 for(var i = 0;i<markerInfoArray.length;i++){
 	
@@ -102,6 +102,7 @@ for(var i = 0;i<markerInfoArray.length;i++){
 		map: map,
 		title: markerInfoArray[i].title,
 		icon: markerInfoArray[i].icon,
+		// This is extra info to put in boxes
 		info: markerInfoArray[i].info
 	});
 	
@@ -116,10 +117,13 @@ var infowindow = new google.maps.InfoWindow({
 
 for(var i = 0; i < markerArray.length; i++){
 
-google.maps.event.addListener(markerArray[i],'click',function(){
+var tempmarker = markerArray[i];
+var temptext = markerArray[i].info;
+
+google.maps.event.addListener(tempmarker,'click',function(){
 		infowindow.close();
-		infowindow.setContent(markerArray[i].info);
-		infowindow.open(map, markerArray[i]);
+		infowindow.setContent(temptext);
+		infowindow.open(map, tempmarker);
 	});
 	
 }
