@@ -127,38 +127,6 @@ for(var i = 0;i<markerArray.length;i++){
 
 // --- EW, HARDCODED ---
 
-//var infowindow1 = new google.maps.InfoWindow({
-//	content: "The Guild House and Chests<br><br>1x Swept Roof Villa"
-//});
-
-var infowindow2 = new google.maps.InfoWindow({
-	content: "Spoons' Farms<br><br>1x Large Farm<br>1x Small Farm"
-});
-
-var infowindow3 = new google.maps.InfoWindow({
-	content: "Alverna's farm<br><br>1x Large Farm"
-});
-
-var infowindow4 = new google.maps.InfoWindow({
-	content: "Terminal's farm - not set to guild, so ask before using<br><br>1x Small Farm"
-});
-
-//google.maps.event.addListener(GuildHouseMarker, 'click', function(){
-//	infowindow1.open(map,GuildHouseMarker);
-//});
-
-google.maps.event.addListener(SpoonMarker, 'click', function(){
-	infowindow2.open(map,SpoonMarker);
-});
-
-google.maps.event.addListener(OtherMarker, 'click', function(){
-	infowindow3.open(map,OtherMarker);
-});
-
-google.maps.event.addListener(TerminalMarker, 'click', function(){
-	infowindow4.open(map,TerminalMarker);
-});
-
 google.maps.event.addListener(map, 'click', function(e){
 	console.log(e.latLng.toString());
 });
