@@ -68,10 +68,12 @@ var plant = 'icons/plant-icon.png';
 // --- LOAD MARKERS FROM XML ---
 // fuck IE6/IE5 support. if anyone in Initiative is using something THAT outdated they don't deserve the map
 
-xmlhttp = new XMLHttpRequest();
+if(window.XMLHttpRequest){
+	xmlhttp = new XMLHttpRequest();
+}
 xmlhttp.open("GET", "markers.xml",false);
 xmlhttp.send();
-xmlMarkers = xmlhttp.responseXML;
+var xmlMarkers = xmlhttp.responseXML;
 
 var markers = xmlMarkers.getElementsByTagName("marker");
 
