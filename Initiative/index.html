@@ -119,7 +119,11 @@ function addInfoWindow(marker, information){
 		var infowindow = new google.maps.InfoWindow({
 			content: information
 		});
+		for(var i = 0; i < infoBoxen.length;i++){
+			infoBoxen[i].close();
+		}
 		infowindow.open(map,marker);
+		infoBoxen.push(infowindow);
 	});
 }
 
