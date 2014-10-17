@@ -106,29 +106,21 @@ for(var i = 0;i<markerInfoArray.length;i++){
 		info: markerInfoArray[i].info
 	});
 	
+	addInfoWindow(temp, markerInfoArray[i].info);
+	
 	markerArray.push(temp);
 	
 }
 
 // --- MAKE INFOBOXES APPEAR WHEN CLICKING MARKERS ---
 
-var infowindow = new google.maps.InfoWindow({
-});
-
-var temptext;
-var tempmarker;
-
-for(var i = 0; i < markerArray.length; i++){
-
-tempmarker = markerArray[i];
-temptext = markerArray[i].info;
-
-google.maps.event.addListener(tempmarker,'click',function(){
-		infowindow.close();
-		infowindow.setContent(temptext);
-		infowindow.open(map, tempmarker);
-	});
-	
+function addInfoWindow(marker, information){
+	google.maps.event.addListener(marker, 'click', function(){
+		var infowindow = new google.maps.InfoWindow({
+			content: information
+		});
+		infowindow.open(map,marker);
+	}
 }
 
 
