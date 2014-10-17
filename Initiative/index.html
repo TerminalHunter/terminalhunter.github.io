@@ -13,9 +13,11 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 <script>
-// Array for markers
+// Array for markers and info boxen
 
+var markerInfoArray = [];
 var markerArray = [];
+var infoBoxen = [];
 
 //--- PREPARE THE XML! ---
 
@@ -46,7 +48,7 @@ for(i=0;i<xmlMarkers.length;i++){
 		y:xmlDoc.getElementsByTagName("y")[i].childNodes[0].nodeValue
 	};
 	
-	markerArray.push(newMarker);
+	markerInfoArray.push(newMarker);
 	
 }
 
@@ -94,15 +96,33 @@ map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
 map.mapTypes.set('custom',CustomMapType);
 map.setMapTypeId('custom');
 
-// --- TAKE THE STUFF FROM XML AND MAKE MARKERS
+// --- TAKE THE STUFF FROM XML AND MAKE MARKERS AND INFO BOXEN
+
+for(var i = 0;i<markerInfoArray.length;i++){
+	
+	var temp = new google.maps.Marker({
+		position: new google.maps.LatLng(markerInfoArray[i].x,markerInfoArray[i].y),
+		map: map,
+		title: markerInfoArray[i].title,
+		icon: markerInfoArray[i].icon
+	});
+	
+	markerArray.push(temp);
+	
+	var tempbox = new google.maps.InfoWindow({
+		content: markerInfoArray[i].info
+	});
+	
+	infoBoxen.push(tempbox);
+	
+}
+
+// --- ADD INFOBOXES ---
 
 for(var i = 0;i<markerArray.length;i++){
-	new google.maps.Marker({
-		position: new google.maps.LatLng(markerArray[i].x,markerArray[i].y),
-		map: map,
-		title: markerArray[i].title,
-		icon: markerArray[i].icon
-	});
+	google.maps.event.addListener(markerArray[i], 'click', function(){
+		infoBoxen[i].open(map,markerArray[i]);
+	}
 }
 
 // --- EW, HARDCODED ---
