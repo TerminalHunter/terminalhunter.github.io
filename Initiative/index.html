@@ -120,18 +120,13 @@ var infowindow = new google.maps.InfoWindow({
 
 function addInfoWindow(marker, information){
 	google.maps.event.addListener(marker, 'click', function(){
-		//infowindow = new google.maps.InfoWindow({
-		//	content: information
-		//});
-		
 		infowindow.close();
 		infowindow.setContent(information);
 		infowindow.open(map,marker);
-		//infoBoxen.push(infowindow);
 	});
 }
 
-// --- EW, HARDCODED ---
+// --- CLICK THE MAP TO GET SOME COORDS, FIGURE OUT HOW TO INTO SEXTANT ---
 
 google.maps.event.addListener(map, 'click', function(e){
 	console.log(e.latLng.toString());
