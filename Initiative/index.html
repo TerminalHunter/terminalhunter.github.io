@@ -106,11 +106,11 @@ for(var i = 0;i<markerInfoArray.length;i++){
 	
 	markerArray.push(temp);
 	
-	var tempbox = new google.maps.InfoWindow({
-		content: markerInfoArray[i].info
-	});
-	
-	infoBoxen.push(tempbox);
+	//var tempbox = new google.maps.InfoWindow({
+	//	content: markerInfoArray[i].info
+	//});
+	//
+	//infoBoxen.push(tempbox);
 	
 }
 
@@ -118,11 +118,14 @@ console.log(infoBoxen[0].content);
 
 // --- MAKE INFOBOXES APPEAR WHEN CLICKING MARKERS ---
 
-for(var i = 0;i<markerArray.length;i++){
-	console.log("TOOT TOOT");
-	google.maps.event.addListener(markerArray[i], 'click', function(){
-		infoBoxen[i].open(map,markerArray[i]);
-	});
+var infowindow = new google.maps.InfoWindow({
+	content: ""
+});
+
+for(var i = 0;i < markerArray.length;i++){
+	google.maps.event.addListener(markerArray[i], 'click',function(){
+		infowindow.open(map, markerArray[i])
+	}
 }
 
 // --- EW, HARDCODED ---
