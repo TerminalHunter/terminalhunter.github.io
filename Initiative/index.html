@@ -114,11 +114,15 @@ for(var i = 0;i<markerInfoArray.length;i++){
 var infowindow = new google.maps.InfoWindow({
 });
 
-google.maps.event.addListener(markerArray[0],'click',function(){
+for(var i = 0; i < markerArray.length; i++){
+
+google.maps.event.addListener(markerArray[i],'click',function(){
 		infowindow.close();
-		infowindow.setContent(markerArray[0].info);
-		infowindow.open(map, markerArray[0]);
+		infowindow.setContent(markerArray[i].info);
+		infowindow.open(map, markerArray[i]);
 	});
+	
+}
 
 
 // --- EW, HARDCODED ---
