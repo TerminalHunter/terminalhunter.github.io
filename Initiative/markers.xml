@@ -3,14 +3,14 @@
 <marker>
   <title>Guild House</title>
   <info>1x Swept Roof Villa</info>
-  <icon>exclamation</icon>
+  <icon>icons/ex-icon.png</icon>
   <x>62.31900278603092</x>
   <y>-106.4794921875</y>
 </marker>
 <marker>
   <title>Terminals Farm</title>
   <info>1x Small Scarecrow Garden</info>
-  <icon>plant</icon>
+  <icon>plant-icon.png</icon>
   <x>64.23</x>
   <y>-84.2431640625</y>
 </marker>
