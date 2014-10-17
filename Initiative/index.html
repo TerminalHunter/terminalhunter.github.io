@@ -83,7 +83,7 @@ function initialize() {
     isPng: true,
       mapTypeControl: false,
       streetViewControl: false,
-        center: GuildHallCoords,     
+        center: new google.mapsLatLng(markerArray[i].x,markerArray[i].y),     
       zoom: 6,
     mapTypeControlOptions: {
       mapTypeIds: ['custom', google.maps.MapTypeId.ROADMAP],
