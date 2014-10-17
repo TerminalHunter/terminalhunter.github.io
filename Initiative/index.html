@@ -125,7 +125,7 @@ var infowindow = new google.maps.InfoWindow({
 for(var i = 0;i < markerArray.length;i++){
 	google.maps.event.addListener(markerArray[i], 'click',function(){
 		infowindow.open(map, markerArray[i])
-	}
+	});
 }
 
 // --- EW, HARDCODED ---
@@ -141,7 +141,10 @@ google.maps.event.addListener(map, 'click', function(e){
 
 
 <body onload="initialize()"> 
-<div id="static" style="position: fixed;color:white;">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.</div>
+<div id="static" style="position: fixed;color:white;">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.
+<!-- Unless you're reading the source, you cheeky bugger.-->
+
+</div>
 <div id="map_canvas" style="background: #1B2D33;"></div> 
 </body>
 </html> 
