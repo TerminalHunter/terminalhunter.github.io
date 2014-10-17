@@ -121,6 +121,8 @@ var infowindow = new google.maps.InfoWindow({
 	content: "Choo-choo"
 });
 
+console.log(markerArray[0].info);
+
 for(var i = 0;i < markerArray.length;i++){
 	google.maps.event.addListener(markerArray[i], 'click',function(){
 		infowindow.setContent(markerArray[i].info);
