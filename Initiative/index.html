@@ -73,7 +73,7 @@ xmlhttp.open("GET", "markers.xml",false);
 xmlhttp.send();
 xmlMarkers = xmlhttp.responseXML;
 
-var markers = xmlMarkers.getElementsByTageName("marker");
+var markers = xmlMarkers.getElementsByTagName("marker");
 
 for(i=0;i<markers.length;i++){
 	new google.maps.Marker({
