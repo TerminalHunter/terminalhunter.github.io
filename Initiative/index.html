@@ -13,6 +13,10 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 <script>
+// Array for markers
+
+var markerArray = [];
+
 //--- PREPARE THE XML! ---
 
 if (window.XMLHttpRequest)
@@ -27,7 +31,24 @@ xmlhttp.open("GET","markers.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
-console.log(xmlDoc.getElementsByTagName("info")[0].childNodes[0].nodeValue);
+var xmlMarkers = xmlDoc.getElementsByTagName("marker");
+
+// --- PUT SHIT IN OBJECTS TO USE LATER! ---
+
+for(i=0;i<xmlMarkers.length;i++){
+	console.log("shit");
+	
+	var newMarker = {
+		title:xmlDoc.getElementsByTagName("title")[i].childNode[0].nodeValue,
+		info:xmlDoc.getElementsByTagName("info")[i].childNode[0].nodeValue,
+		icon:xmlDoc.getElementsByTagName("icon")[i].childNode[0].nodeValue,
+		x:xmlDoc.getElementsByTagName("x")[i].childNode[0].nodeValue,
+		y:xmlDoc.getElementsByTagName("y")[i].childNode[0].nodeValue
+	};
+	
+	markerArray.push(newMarker);
+	
+}
 
 </script>
 
