@@ -12,6 +12,11 @@
 <title>Initiative Gaming Archeage Map</title> 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="xmlLoader.js"></script>
+</head> 
+<body onload="initialize()"> 
+<div id="static" style="position: fixed;">Map is mostly under construction and may not work at any given time...</div>
+<div id="map_canvas" style="background: #1B2D33;"></div> 
+
 <script>
 // --- MAP SCRIPT ---
 function CustomMapType() {
@@ -68,7 +73,10 @@ var plant = 'icons/plant-icon.png';
 
 // --- LOAD MARKERS FROM XML ---
 
-
+xmlDoc = loadXMLDoc("markers.xml");
+console.log("it gets this far");
+var title = xmlDoc.getElementsByTagName("title");
+console.log(title[0].childNodes[0].nodeValue);
 
 // --- EW, HARDCODED MAP MARKERS ---
 
@@ -139,15 +147,5 @@ google.maps.event.addListener(map, 'click', function(e){
 }
 </script>
 
-</head> 
-<body onload="initialize()"> 
-<div id="static" style="position: fixed;">Map is mostly under construction and may not work at any given time...</div>
-<div id="map_canvas" style="background: #1B2D33;"></div> 
-<script>
-xmlDoc = loadXMLDoc("markers.xml");
-console.log("it gets this far");
-var title = xmlDoc.getElementsByTagName("title");
-console.log(title[0].childNodes[0].nodeValue);
-</script>
 </body>
 </html> 
