@@ -115,7 +115,8 @@ for(var i = 0;i<markerInfoArray.length;i++){
 // --- MAKE INFOBOXES APPEAR WHEN CLICKING MARKERS ---
 
 var infowindow = new google.maps.InfoWindow({
-	content: "stuff"
+	content: "stuff",
+	maxWidth: 250
 });
 
 function addInfoWindow(marker, information){
