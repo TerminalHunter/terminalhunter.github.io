@@ -13,7 +13,7 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 <script>
-// Array for markers and info boxen
+// Arrays for markers and info boxen
 
 var markerInfoArray = [];
 var markerArray = [];
@@ -60,7 +60,7 @@ CustomMapType.prototype.maxZoom = 7;
 CustomMapType.prototype.getTile = function(coord, zoom, ownerDocument) {
     var div = ownerDocument.createElement('DIV');
     var baseURL = 'http://terminalhunter.github.io/Initiative/map/';
-    baseURL += zoom + '_' + coord.x + '_' + coord.y + '.jpg';
+    baseURL += zoom + '_' + coord.y + '_' + coord.x + '.jpg';//flip x and y?
     div.style.width = this.tileSize.width + 'px';
     div.style.height = this.tileSize.height + 'px';
     div.style.backgroundColor = '#FFFFFF';
@@ -141,7 +141,7 @@ google.maps.event.addListener(map, 'click', function(e){
 
 
 <body onload="initialize()"> 
-<div id="static" style="position: fixed;color:white;">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.
+<div id="bork">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.
 <!-- Unless you're reading the source, you cheeky bugger.-->
 
 </div>
