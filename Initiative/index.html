@@ -151,9 +151,12 @@ google.maps.event.addListener(map, 'click', function(e){
 
 
 <body onload="initialize()" style="color:white;"> 
-<div id="bork" style="color:white;visibility:hidden;">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.
-<!-- Unless you're reading the source, you cheeky bugger.-->
+
+<!--
+<div id="bork" style="color:white;">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.
+Unless you're reading the source, you cheeky bugger.
 </div>
+-->
 
 <div id="categories">
 
@@ -193,22 +196,26 @@ function categoryUpdate(cat,id,markers){
 </div>
 
 <div id="addMarkerUI">
+
+x: <input type="text" name="xBox" value="" id="x">
+y: <input type="text" name="yBox" value="" id="y">
+<!--<br>
 Name: <input type="text" name="nameBox" value="" id="name">
 <br>
-x: <input type="text" name="xBox" value="" id="x">
-<br>
-y: <input type="text" name="yBox" value="" id="y">
-<br>
 Icon:
-<select> <!-- dynamically load this -->
+<select>
 	<option value="ex">Exclamation Point</option>
 	<option value="plant">Plant</option>
 	<option value="pick">Pickaxe</option>
 </select>
 <br>
 Description: <input type="text" name="descBox" value="" id="desc">
+<br>
 Category: <input type="text" name="catBox" value="" id="cat">
 <br>
+<input type="submit" onclick="submitNewMarker()">
+
+-->
 
 <script>
 function updateXY(){
@@ -217,12 +224,15 @@ function updateXY(){
 	document.getElementById("y").value = currY;
 
 }
+
+function submitNewMarker(){
+	
+}
 </script>
 
 </div>
 
-<div id="marker_add_ui"> <!-- Add "is your name Narwhal?" question, don't allow yes answers to post markers -->
-</div>
+<!-- Add "is your name Narwhal?" question, don't allow yes answers to post markers -->
 
 <div id="map_canvas" style="background: #1B2D33;"></div> 
 </body>
