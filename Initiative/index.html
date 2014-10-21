@@ -19,6 +19,9 @@ var markerInfoArray = [];
 var markerArray = [];
 var infoBoxen = [];
 
+var currX = 0;
+var currY = 0;
+
 //--- PREPARE THE XML! ---
 
 if (window.XMLHttpRequest)
@@ -135,9 +138,13 @@ function addInfoWindow(marker, information){
 
 google.maps.event.addListener(map, 'click', function(e){
 	console.log(e.latLng.toString());
+	currX = e.latLng.lat();
+	currY = e.latLng.lng();
+	updateXY();
 });
 
 }
+
 </script>
 
 </head> 
@@ -180,16 +187,23 @@ function categoryUpdate(cat,id,markers){
 		}
 	}
 }
+
+function updateXY(){
+
+	document.getElementById("xBox").value = currX;
+	document.getElementById("yBox").value = currY;
+
+}
 </script>
 
 </div>
 
 <div id="addMarkerUI">
-Name: <input type="text" name="nameBox" value="newName" id="name">
+Name: <input type="text" name="nameBox" value="" id="name">
 <br>
-x: <input type="text" name="xBox" value="newX" id="x">
+x: <input type="text" name="xBox" value="" id="x">
 <br>
-y: <input type="text" name="yBox" value="newY" id="y">
+y: <input type="text" name="yBox" value="" id="y">
 <br>
 Icon:
 <select> <!-- dynamically load this -->
@@ -198,7 +212,7 @@ Icon:
 	<option value="pick">Pickaxe</option>
 </select>
 <br>
-Description: <input type="text" name="descBox" value="newDesc" id="desc">
+Description: <input type="text" name="descBox" value="" id="desc">
 <br>
 
 </div>
