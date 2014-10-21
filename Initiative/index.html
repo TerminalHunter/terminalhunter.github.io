@@ -64,7 +64,7 @@ CustomMapType.prototype.getTile = function(coord, zoom, ownerDocument) {
     baseURL += zoom + '_' + coord.x + '_' + coord.y + '.png';
     div.style.width = this.tileSize.width + 'px';
     div.style.height = this.tileSize.height + 'px';
-    div.style.backgroundColor = '#FFFFFF';
+    div.style.backgroundColor = '#C9B873';
     div.style.backgroundImage = 'url(' + baseURL + ')';
     return div;
 };
