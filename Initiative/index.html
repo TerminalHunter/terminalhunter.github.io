@@ -42,6 +42,7 @@ for(i=0;i<xmlMarkers.length;i++){
 		title:xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue,
 		info:xmlDoc.getElementsByTagName("info")[i].childNodes[0].nodeValue,
 		icon:xmlDoc.getElementsByTagName("icon")[i].childNodes[0].nodeValue,
+		category:xmlDoc.getElementsByTagName("category")[i].childNodes[0].nodeValue,
 		x:xmlDoc.getElementsByTagName("x")[i].childNodes[0].nodeValue,
 		y:xmlDoc.getElementsByTagName("y")[i].childNodes[0].nodeValue
 	};
@@ -63,7 +64,7 @@ CustomMapType.prototype.getTile = function(coord, zoom, ownerDocument) {
     baseURL += zoom + '_' + coord.x + '_' + coord.y + '.png';
     div.style.width = this.tileSize.width + 'px';
     div.style.height = this.tileSize.height + 'px';
-    div.style.backgroundColor = '#C9B873';
+    div.style.backgroundColor = '#FFFFFF';
     div.style.backgroundImage = 'url(' + baseURL + ')';
     return div;
 };
@@ -102,8 +103,10 @@ for(var i = 0;i<markerInfoArray.length;i++){
 		map: map,
 		title: markerInfoArray[i].title,
 		icon: markerInfoArray[i].icon,
-		// This is extra info to put in boxes
-		info: markerInfoArray[i].info
+		// This is extra info to put in boxes to be passed onto the addInfoWindow() below
+		info: markerInfoArray[i].info,
+		//Add some categorical data
+		category: markerInfoArray[i].category
 	});
 	
 	addInfoWindow(temp, markerInfoArray[i].info);
@@ -141,10 +144,43 @@ google.maps.event.addListener(map, 'click', function(e){
 
 
 <body onload="initialize()"> 
-<div id="bork" style="color:white;">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.
+<div id="bork" style="color:white;visibility:hidden;">Map is mostly under construction and may not work at any given time...<br>If you're reading this, go yell at Terminal because he broke something.
 <!-- Unless you're reading the source, you cheeky bugger.-->
+</div>
+
+<div id="categories">
+
+<form>
+<!-- This is a test case and needs to be replaced by js that dynamically creates categories based on the xml
+something like: 
+var x = document.createElement("INPUT");
+x.setAttribute("type","checkbox");
+x.setAttribute("name","categories");
+x.setAttribute("value","whatever the xml says");
+-->
+<input type="checkbox" name="categories" value="land" id="cat1" onclick="categoryUpdate('Guild Land',cat1)">Guild Land<br>
+<input type="checkbox" name="categories" value="mines" id="cat2" onclick="categoryUpdate('Mining',cat2)">Mining<br>
+</form>
+
+<script>
+function categoryUpdate(cat,id){
+	for(var i = 0; i<markerArray.length;i++){
+		if(markerArray[i].category == cat){
+			if(document.getElementById(id).checked){
+				markerArray[i].setMap(map);
+			}else{
+				markerArray[i].setMap(null);
+			}
+		}
+	}
+}
+</script>
 
 </div>
+
+<div id="marker_add_ui"> <!-- Add "is your name Narwhal?" question, don't allow yes answers to post markers -->
+</div>
+
 <div id="map_canvas" style="background: #1B2D33;"></div> 
 </body>
 </html> 
