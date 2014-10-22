@@ -25,11 +25,35 @@
 	  <y>-87.066650390625</y>
 	</marker>
 	<marker>
-		<title>A mine</title>
-		<info><![CDATA[<div style="min-width:200px;">Holy shit, look at all the rocks</div>]]></info>
+		<title>Solis Seaside Mine</title>
+		<info><![CDATA[<div style="min-width:200px;">Holy shit, look at all the rocks. If there's less than a dozen people here, you're lucky.</div>]]></info>
 		<icon>icons/pick-icon.png</icon>
 		<category>Mining</category>
 		<x>19.435514339097825</x>
-		<y>-94.1748046875</y> 
+		<y>-94.1448046875</y> 
+	</marker>
+	<marker>
+		<title>Ironclaw Mine</title>
+		<info><![CDATA[<div style="min-width:200px;">Ironclaw Mine<br><br>Nice mine, be careful of fall damage.</div>]]></info>
+		<icon>icons/pick-icon.png</icon>
+		<category>Mining</category>
+		<x>24.086589258228027</x>
+		<y>59.490966796875</y> 
+	</marker>
+	<marker>
+		<title>Mahadevi Iron</title>
+		<info><![CDATA[<div style="min-width:200px;">There's 4 iron rocks hidden here. Good if you can't get anything else.</div>]]></info>
+		<icon>icons/pick-icon.png</icon>
+		<category>Mining</category>
+		<x>20.704738720055524</x>
+		<y>-75.673828125</y> 
+	</marker>
+	<marker>
+		<title>Granite Quarry</title>
+		<info><![CDATA[<div style="min-width:200px;">Granite Quarry<br><br>Has more than just granite, there's iron amongst the unknown ores.</div>]]></info>
+		<icon>icons/pick-icon.png</icon>
+		<category>Mining</category>
+		<x>17.41354611437445</x>
+		<y>-73.839111328125</y> 
 	</marker>
 </markerlist>
