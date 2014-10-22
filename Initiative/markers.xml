@@ -38,7 +38,7 @@
 		<icon>icons/pick-icon.png</icon>
 		<category>Mining</category>
 		<x>24.086589258228027</x>
-		<y>59.490966796875</y> 
+		<y>-59.490966796875</y> 
 	</marker>
 	<marker>
 		<title>Mahadevi Iron</title>
