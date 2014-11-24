@@ -17,12 +17,12 @@
 	  <y>-87.60498046875</y>
 	</marker>
 	<marker>
-	  <title>Alverna's Farm</title>
-	  <info><![CDATA[<div style="min-width:200px;">Alverna's Farm<br><br>1x Large Scarecrow Farm</div>]]></info>
+	  <title>Terminal and Hunter's</title>
+	  <info><![CDATA[<div style="min-width:200px;">Trotsky's Farm, Jaest's Farm, and Terminal's Loom.<br><br>2x Small Scarecrow Garden<br>1x Private Loom</div>]]></info>
 	  <icon>icons/plant-icon.png</icon>
 	  <category>Guild Land</category>
-	  <x>19.756364230752375</x>
-	  <y>-87.066650390625</y>
+	  <x>27.848790459862073</x>
+	  <y>-53.931884765625</y>
 	</marker>
 	<marker>
 		<title>Solis Seaside Mine</title>
