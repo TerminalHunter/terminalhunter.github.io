@@ -41,14 +41,6 @@
 		<y>-59.490966796875</y> 
 	</marker>
 	<marker>
-		<title>Mahadevi Iron</title>
-		<info><![CDATA[<div style="min-width:200px;">There's 4 iron rocks hidden here. Good if you can't get anything else.</div>]]></info>
-		<icon>icons/pick-icon.png</icon>
-		<category>Mining</category>
-		<x>20.704738720055524</x>
-		<y>-75.673828125</y> 
-	</marker>
-	<marker>
 		<title>Granite Quarry</title>
 		<info><![CDATA[<div style="min-width:200px;">Granite Quarry<br><br>Has more than just granite, there's iron amongst the unknown ores.</div>]]></info>
 		<icon>icons/pick-icon.png</icon>
