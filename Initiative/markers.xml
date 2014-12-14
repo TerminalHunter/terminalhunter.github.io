@@ -50,7 +50,7 @@
 	</marker>
 	<marker>
 		<title>Starshard Chip Farming Zone</title>
-		<info><![CDATA[<div style="min-width:200px;">Something about handicrafts.</div>]]></info>
+		<info><![CDATA[<div style="min-width:200px;">Starshard Chip Farming Zone<br><br>Something about handicrafts.</div>]]></info>
 		<icon>icons/pick-icon.png</icon>
 		<category>Mining</category>
 		<x>33.41310221370827</x>
