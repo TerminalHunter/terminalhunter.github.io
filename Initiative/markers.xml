@@ -48,4 +48,12 @@
 		<x>17.41354611437445</x>
 		<y>-73.839111328125</y> 
 	</marker>
+	<marker>
+		<title>Starshard Chip Farming Zone</title>
+		<info><![CDATA[<div style="min-width:200px;">Something about handicrafts.</div>]]></info>
+		<icon>icons/pick-icon.png</icon>
+		<category>Mining</category>
+		<x>33.41310221370827</x>
+		<y>-94.63623046875</y> 
+	</marker>
 </markerlist>
