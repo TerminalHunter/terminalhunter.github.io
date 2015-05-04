@@ -222,7 +222,7 @@ function twsInit()
 	stageWorld.addChild(this.button3);
 	
 	this.button3text = new PIXI.Text(" some love", {
-		font: "16px Germar",
+		font: "15px Germar",
 		fill: "white",
 		align: "center",
 		wordWrap: "true",
