@@ -1,0 +1,6 @@
+Most of the underlying code is 'stolen' wholesale from another university game project I worked on:
+
+https://github.com/AndyBarron/CivilWar2014
+
+
+So big thank you to everyone who contributed to that project and, inadvertently, this one.
