@@ -222,7 +222,7 @@ function twsInit()
 	stageWorld.addChild(this.button3);
 	
 	this.button3text = new PIXI.Text(" some love", {
-		font: "18px Germar",
+		font: "16px Germar",
 		fill: "white",
 		align: "center",
 		wordWrap: "true",
@@ -535,7 +535,7 @@ function twsUpdate(delta)
 	
 	if(this.credits){
 		this.creditstext.position.y--;
-		this.creditstext.setText("And thus the changelings dispersed, looking for more love.\n \n \n Game Over! \n \n Thanks for playing! \n\n\n\n	Most of the underlying code is borrwed wholesale from another game project I worked on: \n \n github.com/AndyBarron/CivilWar2014 \n \n So big thank you to everyone who contributed to that project and, inadvertently, this one.\n\n\n A thanks to Jadke, Raptor, and any artists I'm forgetting about from the Budding Friendships project \n I've nicked a sprite or two from that old project:\n github.com/KillerJaguar/budding-friendships \n \n \n Canterlot background made by Akili \n akili-amethyst.deviantart.com/art/Canterlot-Vector-345843552 \n \n If you're not a particularly fast reader, all this info is in the source code. \n \n Send a message to terminalconnection.tumblr.com if you'd like to see this properly finished and/or improved.");
+		this.creditstext.setText("And thus the changelings dispersed, looking for more love.\n \n \n Game Over! \n \n Thanks for playing! \n\n\n\n	Most of the underlying code is borrowed wholesale from another game project I worked on: \n \n github.com/AndyBarron/CivilWar2014 \n \n So big thank you to everyone who contributed to that project and, inadvertently, this one.\n\n\n A thanks to Jadke, Raptor, and any artists I'm forgetting about from the Budding Friendships project \n I've nicked a sprite or two from that old project:\n github.com/KillerJaguar/budding-friendships \n \n \n Canterlot background made by Akili \n akili-amethyst.deviantart.com/art/Canterlot-Vector-345843552 \n \n If you're not a particularly fast reader, all this info is in the source code. \n \n Find TerminalHunter over steam, twitter, or wherever you can find him if you'd like to see this properly finished and/or improved.");
 	}
 }
 
