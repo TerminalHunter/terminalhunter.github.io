@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'beyond_wonderland';
+    src: url('beyond_wonderland-webfont.eot');
+    src: url('beyond_wonderland-webfont.eot?#iefix') format('embedded-opentype'),
+         url('beyond_wonderland-webfont.woff2') format('woff2'),
+         url('beyond_wonderland-webfont.woff') format('woff'),
+         url('beyond_wonderland-webfont.ttf') format('truetype'),
+         url('beyond_wonderland-webfont.svg#beyond_wonderlandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	
+	font-family: 'beyond_wonderland';
+	
+}
