@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'beyond_wonderland';
     src: url('beyond_wonderland-webfont.eot');
@@ -14,5 +16,36 @@
 body {
 	
 	font-family: 'beyond_wonderland';
+	font-size: 24pt;
+	color: #222222;
+	text-align: center;
 	
+	background: #000000 url(oldpapurr.jpeg) no-repeat fixed center;
+	background-size: 800px 1200px
+	
+}
+
+h1{
+	
+	font-size: 55pt;
+	font-weight: normal;
+	margin: 5pt;
+}
+
+a:link{
+	color: #222222;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#444444;
+}
+
+a:hover{
+	color:#999999;
+}
+
+p{
+	width: 700px;
+	margin: 0 auto;
 }
