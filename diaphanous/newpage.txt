@@ -7,6 +7,6 @@
 <body>
 <h1><a href="http://terminalhunter.github.io/diaphanous">A History of Diaphanous</a></h1>
 <br><br>
-Text
+<p>Text</p>
 </body>
 </html>
