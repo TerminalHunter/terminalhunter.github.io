@@ -20,7 +20,7 @@ Step 1: Location, Location, Location
 
 Awkward or Odd environment 				- +3 intrigue defense
 Inappropriate environment 				- +6 intrigue defense
-Extremely inappropriate environment 	- +12 intrigue defense
+Extremely inappropriate environment 			- +12 intrigue defense
 
 
 Step 2: Objective
@@ -32,13 +32,13 @@ Step 3: Disposition
 
 Name				Deception & Intimidation Mod		Persuasion Mod
 
-Affectionate		-2									+5
-Friendly			-1									+3
-Amiable				+0									+1
-Indifferent			+0									+0
-Dislike				+1									-2
-Unfriendly			+2									-4
-Malicious			+3									-6
+Affectionate			-2					+5
+Friendly			-1					+3
+Amiable				+0					+1
+Indifferent			+0					+0
+Dislike				+1					-2
+Unfriendly			+2					-4
+Malicious			+3					-6
 
 
 Step 4: Technique
