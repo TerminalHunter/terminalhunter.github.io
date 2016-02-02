@@ -30,18 +30,36 @@ State or re-evaluate your objective.
 
 Step 3: Disposition
 
-Name				Deception & Intimidation Mod		Persuasion Mod
+Name				Deception & Intimidation Mod		Persuasion Mod		Intrigue Defense
 
-Affectionate			-2					+5
-Friendly			-1					+3
-Amiable				+0					+1
-Indifferent			+0					+0
-Dislike				+1					-2
-Unfriendly			+2					-4
-Malicious			+3					-6
+Affectionate			-2					+5			1
+Friendly			-1					+3			2
+Amiable				+0					+1			3
+Indifferent			+0					+0			4
+Dislike				+1					-2			5
+Unfriendly			+2					-4			6
+Malicious			+3					-6			7
 
 
-Step 4: Technique
+Step 4: Choose Your Action
+
+Assist.................................... Make a Persuasion check DC 15 and if you succeed you may roll on any tests the assisted takes part in next round, replacing your value with theirs if you wish
+Consider.................................. Do nothing, gain advantage next round
+Fast Talk................................. Make a Persuasion test against an opponent's Wisdom Saving Throw and if they fail they lose the bonuses to intrigue defense from INT
+*Influence*............................... Roll using the skill dictated by your technique, do damage to composure
+Manipulate................................ Roll your Deception against their Insight and on success choose their technique next round
+Mollify................................... Roll DC 15 Persuasion to heal 1d4+(Persuasion Mod) composure, DC 20 Persuasion to heal 1d6+(Persuasion Mod), and DC 25 for 1d8+(Persuasion Mod)
+Quit...................................... Read the tin, gg no re
+Read Target............................... Roll Insight against their Deception and if you win get advantage
+Roll Initiative........................... Flip a table, draw a weapon, and start a fight
+Shield Yourself Behind Your Reputation.... Replace defense with status*6, one turn only, once per intrigue
+Withdraw.................................. Replace your defense with the result of a Wisdom saving throw
+Torture................................... Don't get too many ideas, but if you do lethal damage and the target is unable to resist, it takes away from intrigue defense. But, STR and CON saving throw bonuses replace the INT bonus in intrigue defense. DC 10 Medicine check to get approx. target HP. DC 15 to resusitate, +5 for each resusitation after the first.
+
+
+Step 5: Technique
+
+If you chose *Influence* in step 4, choose a technique.
 
 Pls no metagaming. This decision should be based on the situation at hand and the flavor of roleplaying, not which skill you're best at.
 
@@ -75,22 +93,6 @@ Tends to fade to black. If a successful seduction check happens during an intrig
 Taunt
 Skill: Intimidation(CHA)
 Tends to make people do things or agree with you.
-
-
-Step 5: Choose Your Action
-
-Assist.................................... Make a Persuasion check DC 15 and if you succeed you may roll on any tests the assisted takes part in next round, replacing your value with theirs if you wish
-Consider.................................. Do nothing, gain advantage next round
-Fast Talk................................. Make a Persuasion test against an opponent's Wisdom Saving Throw and if they fail they lose the bonuses to intrigue defense from INT
-*Influence*............................... Roll using the skill dictated by your technique, do damage to composure
-Manipulate................................ Roll your Deception against their Insight and on success choose their technique next round
-Mollify................................... Roll DC 15 Persuasion to heal 1d4+(Persuasion Mod) composure, DC 20 Persuasion to heal 1d6+(Persuasion Mod), and DC 25 for 1d8+(Persuasion Mod)
-Quit...................................... Read the tin, gg no re
-Read Target............................... Roll Insight against their Deception and if you win get advantage
-Roll Initiative........................... Flip a table, draw a weapon, and start a fight
-Shield Yourself Behind Your Reputation.... Replace defense with status*6, one turn only, once per intrigue
-Withdraw.................................. Replace your defense with the result of a Wisdom saving throw
-Torture................................... Don't get too many ideas, but if you do lethal damage and the target is unable to resist, it takes away from intrigue defense. But, STR and CON saving throw bonuses replace the INT bonus in intrigue defense. DC 10 Medicine check to get approx. target HP. DC 15 to resusitate, +5 for each resusitation after the first.
 
 
 Step 6: Damage
