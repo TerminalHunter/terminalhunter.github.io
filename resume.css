@@ -4,8 +4,7 @@ body {
 	font-size: 16pt;
 	text-align: center;
 	
-	width:800px;
-	margin: 0 auto;
+	background:#4f3f4f;
 	
 }
 
@@ -30,4 +29,12 @@ ul{
 a{
 	text-decoration:none;
 	
+}
+
+#resume{
+	width:800px;
+	margin: 0 auto;
+	border-radius: 25px;
+	background:#ffffff;
+	padding:20px;
 }
