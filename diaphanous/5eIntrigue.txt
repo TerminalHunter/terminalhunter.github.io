@@ -98,7 +98,7 @@ Tends to make people do things or agree with you.
 Step 6: Damage
 
 The difference between your defense and the opponent's roll is taken off of your composure.
-You can mitigate this by taking 1 point of frustration and rolling a Wisdom saving throw DC 5+(Composure damage). On success, you successfully mitigate. On failure, you gain disadvantage on the next round of intrigue.
+You can mitigate this by taking 1 point of frustration and rolling a Wisdom saving throw DC 5+(Incoming Composure damage). On success, you successfully mitigate. On failure, you gain disadvantage on the next round of intrigue.
 Maxiumum frustration is your Wisdom saving throw modifier. Each point of frustration also lowers that value for the duration of the intrigue. Yes, this also means your intrigue defense goes down.
 
 

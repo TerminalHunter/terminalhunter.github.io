@@ -1,0 +1,33 @@
+body {
+	
+	font-family: 'Calibri', sans-serif;
+	font-size: 16pt;
+	text-align: center;
+	
+	width:800px;
+	margin: 0 auto;
+	
+}
+
+#leftcol{
+	
+	width:350px;
+	float:left;
+	
+}
+
+#rightcol{
+	
+	width:350px;
+	float:right;
+	
+}
+
+ul{
+	text-align:left;
+}
+
+a{
+	text-decoration:none;
+	
+}
