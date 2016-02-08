@@ -6,7 +6,7 @@ Composure is:
 must be at least 1
 
 so, examples:
-History's character has an intrigue defense of 1+5+1+5+3+3 = 18 and his composure is 20.
+History's character has an ... oh... right...
  Drader's character has an intrigue defense of 0+2+4+2+0+4 = 12 and his composure is 11.
  
 Circumstance is a number formed by location and disposition.
