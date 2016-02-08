@@ -1,5 +1,3 @@
-NEEDS PLAYTESTING. PLZ PLAYTEST ME.
-
 Intrigue defense is: 
 Int Saving Throw Bonus + Wisdom Saving Throw Bonus + Charisma Saving Throw Bonus + Proficiency bonus in Perception + Proficiency bonus in Insight + Status + Circumstance
 
