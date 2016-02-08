@@ -1,0 +1,331 @@
+a.k.a. HOLY FUCK, how many tables did you say?!
+
+Note: This is basically the rules for warfare ripped from SIFRPG. However, they have been adapted for our use of 5e rules and the world hex map.
+Note2: This was edited for use in a 1920x1080 chrome window and doesn't line up in Notepad++ or related programs.
+
+CTRL-F TABLE OF CONTENTS:
+
+1-WHAT SHOULD I READ? THIS IS LONG.
+2-WHAT DO PLAYERS NEED TO DO?
+	Table 2A: The Pre-Game
+	Table 2B: The War Loop
+	Table 2C: Extra Things Players Can Do During Turns
+	Table 2D: The General Rules of War & Damage Table
+3-MORALE, CASUALTIES, WINNING, & LOSING
+	Table 3A: Morale Table
+	Table 3B: Glory Table
+4-UNIT TABLES
+	Table 4A: Experience points and training
+	Table 4B: Which units can improve which skills by skill
+	Table 4C: Which units can improve which skills by unit
+	Table 4D: Unit Statistics
+	Table 4F: Special Equipment
+5-ORDERS & FORMATIONS
+	Table 5A: Regular Orders
+	Table 5B: Advanced Orders
+	Table 5C: Formations
+-----
+
+1-WHAT SHOULD I READ? THIS IS LONG.
+
+If you're a player, you should probably skim WHAT DO PLAYERS NEED TO DO?
+If your character has the 'command' skill, you should probably read ORDERS & FORMATIONS and maybe the UNIT TABLES if you're in the market for new units.
+If you're curious about what you can do during war, like numbers, or are bored: you could probably read everything.
+
+-----
+
+2-WHAT DO PLAYERS NEED TO DO?
+
+Table 2A: The Pre-Game
+
+1. Remind everyone about the terrain, time, and weather.
+
+Terrain:	Certain tiles do certain things. Remind the DM it's on page 182 and too long for this document.
+Night: 		Darkness slows all movement, -2d on agility, athletics, awareness, fighting, thievery and -4d on marksmanship
+Weather: 	Heavy rain slows all movement, increases streams to rivers, and gives -2d on all fighting and marksmanship.
+		Light snow does the same as the above, sans increasing streams.
+		Heavy snow takes the same penalties as light snow and night combined. This is why land invasions of Russia are doomed to fail.
+Fortifications: Troops in fortifications get a defense bonus. Troops with time on their hands (6 hours) can dig trenches and get +1 defense. Engineers can make temporary fortifications in 3 hours and grant +2 defense.
+
+2. Put units on the map. Figure out where all the PC's are. Check seige weapons and special equipment.
+3. Sneaky Beaky: Units in tiles with cover can roll for stealth.
+4. If you want to send a messenger to parlay, do that now.
+
+
+Table 2B: The War Loop
+
+Once fighting has started the war loop takes hold.
+
+1. 3 player turns
+2. Ordered units follow orders
+3. 1 player turn
+4. Unordered units follow standing orders
+5. Repeat until the dead litter the field
+
+Table 2C: Extra Things Players Can Do During Turns
+
+Attach				Lets your character fall in line with the men, reduces discipline difficulty -3 and gives +1 to Fighting and Marksmanship.
+				Attached characters don't get to do anything else and the bonuses do not stack.
+Unattach			Any character in a unit may leave in order to run around and do stuff. Takes 3 turns to do, so attaching/unattaching isn't abusable.
+Attack				LEEEROOOY JEEENKIIINS!! Drop down to the 5e scale, face off against a dozen or so enemy units, do as much damage as you can in 30 5e turns.
+Organize/Rally			Roll a command check DC 10 for disorganized units to turn them organized. DC 15 to turn a routed unit into a disorganized one.
+Issue Order			Gives an order to a unit. Command check DC based on the unit's discipline. On success, the new order is followed.
+				On failure, the previous order (if any) will continue to be followed. On crit failure, the unit stops and has no order.
+
+Orders can be found in the ORDERS & FORMATIONS chapter. You should probably read that if you're a commander.
+
+
+Table 2D: The General Rules of War & Damage Table
+
+Units move 1 trapezoid per turn. Mounted units move 2 trapezoids per turn. Ships with the wind move 3 trapezoids per turn. Ships against the wind move 1 trapezoid per turn.
+Units can sprint to double their movement speed, but can only sprint every other turn (and within reason). Boats can't sprint.
+Slowed units move at half their speed. Very slowed units (2x slowed) move at quarter speed. Units can't stack any more slowness.
+Units can move onto any trapezoid that touches the current trapezoid they're standing on. Even if it's just two corners touching.
+
+Units that occupy the same trapezoid as an enemy unit can attack that unit using the Fighting skill.
+1 organized unit is enough to block an enemy unit from moving past it (with exceptions, see ORDERS & FORMATIONS).
+Friendly units can hide behind other friendly units on the same trapezoid. (No, halfling ranged units cannot gain stealth by hiding behind human infantry. That would be silly.)
+It works a lot like Hearthstone's taunt mechanic. Enemy units must attack blocking units before they can attack the rest of the units. Once a unit is disorganized it can no longer block.
+
+Units can also attack using the Marksmanship skill.
+Units with short ranged marksmanship attacks can only attack units on the same trapezoid as they are.
+Units with medium range can attack units on adjacent trapezoids.
+Units with long range can attack units up to two trapezoids away.
+Unless a unit gets a really good roll on their marksmanship test, expect friendly fire if they target a trapezoid with friendly units. 
+If ranged units are blocking and attacking units on the same tile, friendly fire is ignored.
+
+When attacking, roll (Unit's fighting or marksmanship skill rank)d6 against the defense of the unit being attacked.
+If successful, the unit does damage.
+If successful and rolls at least enemy defense + 5,  the unit does double damage.
+If successful and rolls at least enemy defense + 10, the unit does triple damage.
+If successful and rolls at least enemy defense + 20, the unit does quadruple damage.
+
+If a unit has an armor value, it reduces all damaged recieved by that value.
+
+Defense, damage, and armor are calculated using the UNIT TABLES. 
+It should all be on the unit's character sheets already, but double-checking the DM's math/reading comprehension can never hurt.
+
+
+-----
+
+3-Morale, Casualties, Winning, and Losing.
+
+Table 3A: Morale Table
+
+When a unit hits 0 hp, it becomes disorganized.
+It loses 1d on all checks and gains +3 difficulty to command.
+
+If it takes more damage when it's disorganized, it routs.
+The unit runs away until it finds somewhere safe.
+
+If it takes more damage when it's routing, it's destroyed.
+If at any point the damage taken in one turn is 2x it's HP, it's destroyed.
+You can make command checks to heal hp, unrout, and reorganize units. Check ORDERS & FORMATIONS.
+
+
+Casualties
+
+Each unit, after the battle, rolls a d6 to determine its rate of casualties during the conflict. Tell the DM, "page 189."
+The more a unit is damaged, disorganized, and routed the more likely it is to lose experience or be destroyed. Experience loss can be temporary (they'll be back to Veteran in a few months) or permanent.
+It's also possible for units to gain experience during fighting. If experience gains put them beyond elite, they only get 1 exp per 'promotion'.
+
+
+Table 3B: Glory Table
+
+Beat 3 or fewer units		1
+Defeat 3-6			2
+Defeat 7-9			3
+Defeat 10+			4
+Outnumbered 3:2			+1
+Outnumbered 2:1			+2
+Outnumbered 3:1+		+3
+Outnumbered 40:1+		Honorary Pole Award
+Outnumbered 500:1+		Honorary Spartan Award (shouldn't happen during the campaign unless the DM goes insane)
+
+You get this even if you lose. Unless you die.
+
+-----
+
+4-UNIT TABLES
+
+
+Table 4A: Experience points and training
+
+Green troops		have 1 experience point.
+Trained 		have 3.
+Veteran 		have 5.
+Elite 			have 7.
+
+1 rank in a skill per experience point.
+
+
+Table 4B: Which units can improve which skills by skill
+
+Note: All units start with rank 2 in every skill.
+
+Agility				Archers, Cavalry, Raiders, Sailors
+Animal Handling			Cavalry, Peasant Levies, Support
+Athletics			Crusaders, Guerillas, Infantry, Mercenaries, Personal Guard (Athletics is a dumb word and might be replaced with "Doctrine" or "Tactics" or something less dumb.)
+Awareness			Archers, Garrison, Peasant Levies, Sailors, Scouts, Warships
+Cunning				N/A
+Deception			N/A
+Endurance			Criminals, Crusaders, Engineers, Garrison, Infantry, Mercenaries, Personal Guard, Raiders, Scounts, Support
+Fighting			Cavalry, Criminals, Crusaders, Engineers, Garrison, Infantry, Mercenaries, Personal Guard, Raiders, Sailors, Warships
+Healing				Support
+Knowledge			N/A
+Language			N/A
+Marskmanship			Archers, Guerillas, Warships
+Persuasion			N/A
+Stealth				Criminals, Guerillas, Scouts
+Survival			Peasant Levies
+Thievery			N/A
+Warfare				Engineers
+Will				N/A
+
+All of this being said: Special units in the military may pick any three skills to train.
+
+
+Table 4C: Which units can improve which skills by unit
+
+(when in doubt or if a mistake was made above, this list is more accurate)
+
+Archers				Agility, Awareness, Marskmanship
+Cavalry				Agility, Animal Handling, Fighting
+Criminals			Endurance, Fighting, Stealth
+Crusaders			Athletics, Endurance, Fighting
+Engineers			Endurance, Fighting, Warfare
+Garrison			Awareness, Endurance, Fighting
+Guerillas			Athletics, Marksmanship, Stealth
+Infantry			Athletics, Endurance, Fighting
+Mercenaries			Athletics, Endurance, Fighting
+Peasant Levies			Animal Handling, Awareness, Survival
+Personal Guard			Athletics, Endurance, Fighting
+Raiders				Agility, Endurance, Fighting
+Sailors				Agility, Awareness, Fighting
+Scouts				Awareness, Endurance, Stealth
+Special				Any three
+Support				Animal Handling, Endurance, Healing
+Warships			Awareness, Fighting, Marskmanship
+
+I didn't read ahead and House Gunhammer has some garrisons with guns. 
+So, I guess they can just swap out Fighting for Marksmanship, ignore whatever that actually costs to make, just let the players have it, and we'll call it a day?
+
+
+Table 4D: Unit Statistics
+
+DEFENSE = Agility Rank + Awareness Rank + Athletics Rank - Armor Penalty
+
+HP = 3 * Endurance Rank
+
+PASSIVE = 4 * Skill Rank
+
+Each column has 2 values. If you spend 1 wealth on a unit, they can upgrade one of these values to the second number. Upgrading armor increases the armor penalty to the second value as well.
+
+Unit				Armor Rating		Armor Penalty		Fighting Damage				Marksmanship Damage & Range
+Archers				2/3			-1/-2			Athletics-1/+0				Agility+2/+3 Medium
+Cavalry				5/9			-3/-5			Animal Handling+3/+5
+Criminals			1/4			+0/-2			Athletics+1/+2
+Engineers			2/5			-1/-3			Athletics-1/+0
+Garrison			3/5			-2/-3			Athletics+1/+2
+Guerillas			1/3			+0/-2			Athletics+0/+1				Agility+1/+2 Close
+Infantry/Crusaders		3/4			-2/-2			Athletics+1/+2
+Mercenaries			4/5			-2/-3			Athletics+1/+3
+Peasant Levies			0/2			+0/-1			Athletics-1/+0				Athletics-1/+0 Close
+Personal Guard			6/10			-3/-6			Athletics+2/+3
+Raider				2/5			-1/-2			Athletics+1/+2
+Sailors				0/2			+0/-1			Athletics+1/+2
+Scouts				2/3			-1/-2			Athletics+0/+1				Agility+0/+1 Medium
+Support				0/2			+0/-1			Athletics-1/+0
+Warships			5/10			N/A			Athletics+1/+4				Agility+1/+3 Long
+
+
+Table 4E: Seige Units
+
+Seige Units require Engineers and use their Warfare skill to do damage.
+
+Type/Name				Cost				Damage vs. Hard		Damage vs. Soft
+
+Anti-fortification (-1d to hit soft targets)
+
+Mangonel				3 wealth			10			6
+Trebuchet				4 wealth			12			7
+Mortar/Bombard				3/5/7 wealth			5/7/9			2/4/5
+
+Anti-personnell (-1d to hit hard targets)
+
+Scorpion				1 wealth			0			2 * 3
+Spitfire				2 wealth			Fire?			3+
+Field Gun				3/5/7 wealth			1/2/3			3 * 3/5/7
+
+
+Table 4F: Special Equipment
+
+Battering/Covered Ram			1/2 lands per unit		+2d6 on checks vs. doors and gates/Requires Engineers, +8 Armor, +5 Defense, replaces check to knock down doors and gates with 8d6. Slows
+Boiling Oil				0.5 wealth per use		10 damage, ignores armor, causes fires
+Mantlets				1 wealth per unit		Tower sheild on a wheeled frame. +5 defense against marksmanship, slows movement
+Scaling Ladders	& Grappling Hooks	0.5 wealth per unit		-5 defense from Marksmanship, +1d athletics when climbing walls, removes command penalty to scale walls
+Siege Tower				2 wealth per unit		+5 defense, no check needed to climb walls, slows movement
+Turtle					1 wealth per unit		+10 defense, but can't attack and slows movement
+
+
+Chemical Weapons?			What? No. Why would I think of mechanics like that? This isn't the Great War simulator.
+
+Besides, it would be really dangerous... like any unit tasked with deploying the weapon has an increased difficulty to follow orders by +3. If the unit is attacked before deploying said weapon, roll a d6 and on crit fail it accidentally goes off. Successful deploying would deal 7 damage a round (ignoring armor) for 2d6 rounds. There's a chance to spread depending on weather (probably a 1d8 for wind direction) and routing units.
+
+But only a madman would push any advantage like this.
+
+
+-----
+
+5-ORDERS & FORMATIONS
+
+Some of these are dumber than others. Use at your own risk.
+
+Table 5A: Regular Orders
+
+Attack					The unit moves towards an enemy until it can roll to attack.
+Change Rank				The unit starts blocking or stops blocking.
+Charge					The unit moves until it's a tile away from an enemy, charges, and takes a die off of it's fighting test but gains +2 to damage
+Defend					The unit makes an agility test and that replaces it's defense for the round. If they're equipped with sheilds, +1d.
+Fighting Withdrawl			The unit moves away from an enemy yet still attacks. -1 dice to attack roll, but a crit failure to command disorganizes troops.
+Move					The unit goes where you tell it to.
+Ready					"HOLD YOUR FIRE 'TILL YOU SEE THE WHITES OF THEIR EYES" and related orders. Any order with additional logic.
+Regroup					Successful order restores +1 health
+Retreat					The unit moves off the battlefield somewhere safe. Crit fail to command causes troops to rout.
+Surrender				This order may only be issued once. Calls for all forces to surrender. 
+					Immediately roll a discipline check for every unit under your control. Any failed checks cause routs.
+
+
+Table 5B: Advanced Orders
+(all require trained troops)
+
+Name					Extra Difficulty		Description
+Ambush					+3				Must be concealed, +2 to damage. To conceal, your troops must make a (Stealth Rank)d6 check against passive awareness (4*Awareness rank) before the fight.
+Blitz					+6				Allows sprinting in a straight line through enemy units. All units are attacked, with -1d to fighting for each successive unit
+Envelop					+6				If the enemy tries to retreat or disengage, get a free, extra attack.
+Force Back				+3				Fighting check vs opponent's athletics. Pushes opponent to adjacent tile.
+Hammer & Anvil				+6				If you push a unit into another waiting unit, it gets +1d to fighting check? For +6? This is dumb.
+Pincer					+3				Make two command checks on two units engaged on the same tile, if both pass +1d to the units attack 
+Probing Attack				+6				-1d to attack, but +2 defense
+Reform					+3				Two of your damaged units enter, one undamaged unit leaves
+Sap					+3				Must be engineers, the UNIT rolls Warfare DC 12 to damage a wall by 1 per success. -5 defense during this action.
+Scale Walls				+3				Check athletics against the dm's imagination. Appropriate ladders/grappling hooks remove the difficulty.
+Set for a Charge			+3				If this unit is hit by a charge, they do double damage to charging opponents
+Split Attack				+6				Divide dice between different units. Effectively allows units to attack 2+ units at a time.
+Suppressing Fire			+3				Take a marksmanship test against a unit, if it succeeds the enemy unit has +3 difficulty to take orders - might do damage
+Trample					+3				Must be mounted, same as blitz but does an extra 5 damage on each success
+"Slash & Burn"				+3				Uh, everyone takes some experience loss due to mentioning the previous campaign and the DM takes a shot.
+The book actually says on pg. 191 "A unit under this order slashes and burns crops, torches buildings, rapes the smallfolk, and scours the lands. The lord or ruling family of the land reduces their Population and Wealth resource by 1 each time the order is given."
+
+
+Table 5C: Formations
+
+I don't think facing works on the hex grid, so there's an unfortunate lack of flanking maneuvers.
+Or just call for a Command check and on failure the enemy gets 1 bonus dice if flanking and 1 extra dice if attacking from behind.
+
+Checkered Form				+0				After issuing this order, unit gets +5 defense against marksmanship attacks but suffers +3 difficulty to taking orders
+Phalanx					+6				+5 defense against fighting, slow movement, -5 against marksmanship
+Shield Wall				+6				Can't move, +5 defense against fighting attacks, negates benefits of a charge
+Square					+6				Can't move, can't be flanked
+Tortoise Shell				+9				Slow movement, +5 defense against all attacks, can't be flanked
+Wedge					+3				+1d to charges, -5 defense against marksmanship attacks
