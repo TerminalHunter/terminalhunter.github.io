@@ -20,6 +20,7 @@ CTRL-F TABLE OF CONTENTS:
 	Table 4C: Which units can improve which skills by unit
 	Table 4D: Unit Statistics
 	Table 4F: Special Equipment
+	Table 4G: Units and Fortifications
 5-ORDERS & FORMATIONS
 	Table 5A: Regular Orders
 	Table 5B: Advanced Orders
@@ -273,6 +274,17 @@ Chemical Weapons?			What? No. Why would I think of mechanics like that? This isn
 Besides, it would be really dangerous... like any unit tasked with deploying the weapon has an increased difficulty to follow orders by +3. If the unit is attacked before deploying said weapon, roll a d6 and on crit fail it accidentally goes off. Successful deploying would deal 7 damage a round (ignoring armor) for 2d6 rounds. There's a chance to spread depending on weather (probably a 1d8 for wind direction) and routing units.
 
 But only a madman would push any advantage like this.
+
+
+Table 4G: Units and Fortifications
+
+				Added Defense		Capacity
+Tower				+3			1
+Hall				+4			2
+Small Castle			+6			3
+Castle				+8			5
+Large Castle			+12			10
+Citadel				+15			25
 
 
 -----
