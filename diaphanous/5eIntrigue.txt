@@ -1,33 +1,58 @@
 Intrigue defense is: 
-Int Saving Throw Bonus + Wisdom Saving Throw Bonus + Charisma Saving Throw Bonus + Proficiency bonus in Perception + Proficiency bonus in Insight + Status + Circumstance
+---
+10
++
+INT modifier
++
+WIS modifier
++
+CHA modifier
++ 
+Status 
++ 
+Circumstance
+---
+
+Intrigue Defense is basically your intrigue AC.
+House Gunhammer's status is 4. (at the time of writing)
+This means draders has status 4 and everyone else has status 3.
+
+
 
 Composure is:
-5 + (3 x Wisdom Saving Throw Bonus)
-must be at least 1
+---
+Take the opposite of your hit die.
+i.e. 	d12 hit dice? d6 composure dice
+		d10 hit dice? d8 composure dice
+		d8 hit dice? d10 composure dice
+		d6 hit dice? d12 composure dice
+		
+Calculate it the same as you would HP
+---
 
-so, examples:
-History's character has an ... oh... right...
- Drader's character has an intrigue defense of 0+2+4+2+0+4 = 12 and his composure is 11.
- 
-Circumstance is a number formed by location and disposition.
+Composure is basically your intrigue HP.
 
-Your defense is basically your DC to be influenced (or AC, if you prefer).
 
- 
+
+When an intrigue is declared (either by a player stating his intention or the DM springing it on you )
+
+
 Step 1: Location, Location, Location
-
+---
 Awkward or Odd environment 				- +3 intrigue defense
 Inappropriate environment 				- +6 intrigue defense
 Extremely inappropriate environment 			- +12 intrigue defense
+---
 
 
 Step 2: Objective
-
+---
 State or re-evaluate your objective.
+---
 
 
 Step 3: Disposition
-
+---
 Name				Deception & Intimidation Mod		Persuasion Mod		Intrigue Defense
 
 Affectionate			-2					+5			1
@@ -37,10 +62,11 @@ Indifferent			+0					+0			4
 Dislike				+1					-2			5
 Unfriendly			+2					-4			6
 Malicious			+3					-6			7
+---
 
 
 Step 4: Choose Your Action
-
+---
 Assist.................................... Make a Persuasion check DC 15 and if you succeed you may roll on any tests the assisted takes part in next round, replacing your value with theirs if you wish
 Consider.................................. Do nothing, gain advantage next round
 Fast Talk................................. Make a Persuasion test against an opponent's Wisdom Saving Throw and if they fail they lose the bonuses to intrigue defense from INT
@@ -53,10 +79,11 @@ Roll Initiative........................... Flip a table, draw a weapon, and star
 Shield Yourself Behind Your Reputation.... Replace defense with status*6, one turn only, once per intrigue
 Withdraw.................................. Replace your defense with the result of a Wisdom saving throw
 Torture................................... Don't get too many ideas, but if you do lethal damage and the target is unable to resist, it takes away from intrigue defense. But, STR and CON saving throw bonuses replace the INT bonus in intrigue defense. DC 10 Medicine check to get approx. target HP. DC 15 to resusitate, +5 for each resusitation after the first.
+---
 
 
 Step 5: Technique
-
+---
 If you chose *Influence* in step 4, choose a technique.
 
 Pls no metagaming. This decision should be based on the situation at hand and the flavor of roleplaying, not which skill you're best at.
@@ -84,20 +111,50 @@ Intimidate
 Skill: Intimidation(STR)
 Tends to temporarily make people friendlier.
 
-Seduce
-Skill: Seduce (Special) || Untrained(CHA)
-Tends to fade to black. If a successful seduction check happens during an intrigue with correct sexuality and at least friendly disposition: post \\gildafuck.
-
 Taunt
 Skill: Intimidation(CHA)
 Tends to make people do things or agree with you.
 
+Seduce
+Skill: Seduce (Special) || Untrained(CHA)
+Tends to fade to black. If a successful seduction check happens during an intrigue with correct sexuality and at least friendly disposition: post \\gildafuck.
+---
 
-Step 6: Damage
 
+Step 6: Doing "Damage"
+---
 The difference between your defense and the opponent's roll is taken off of your composure.
-You can mitigate this by taking 1 point of frustration and rolling a Wisdom saving throw DC 5+(Incoming Composure damage). On success, you successfully mitigate. On failure, you gain disadvantage on the next round of intrigue.
-Maxiumum frustration is your Wisdom saving throw modifier. Each point of frustration also lowers that value for the duration of the intrigue. Yes, this also means your intrigue defense goes down.
+You can mitigate this by taking 1 point of frustration and rolling a Wisdom saving throw DC 5+(Incoming Composure damage). 
+On success, you successfully mitigate and take no composure damage. On failure, you gain disadvantage on the next round of intrigue and take the composure damage.
+Each point of frustration lowers your intrigue defense by 1 and is removed once you complete a long rest.
+---
 
 
 Step 7: Wash, rinse, repeat until someone loses or quits
+
+
+
+
+-----
+
+New Feats! (Subject to heavy balancing and outright revokation followed by immediate replacement)
+
+--
+No shit, Sherlock
+
+Increase INT by 1, to a maximum of 20
+When calculating your intrigue defense, multiply your intelligence modifier by 2.
+You may substitute any intrigue related Insight(WIS) check with an Investigation(INT) check.
+--
+
+Stubborn as a Mule
+
+(Recycling the "Tough" feat but for intrigue)
+
+
+--
+
+The Name's Bond, James Bond.
+
+Gain proficiency in Seduction(CHA)
+Gain proficiency in Pistols and concealed arms
