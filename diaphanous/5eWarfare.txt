@@ -244,7 +244,7 @@ Table 4E: Seige Units
 
 Seige Units require Engineers and use their Warfare skill to do damage.
 1 unit of Engineers can effectively use up to 4 seige weapons.
-**GUNPOWDER SEIGE$ UNITS NEED PLAYTESTING/BALANCING, IGNORE NUMBERS FOR NOW**
+**SEIGE UNITS NEED PLAYTESTING/BALANCING, IGNORE NUMBERS FOR NOW**
 
 Type/Name				Cost				Damage vs. Hard		Damage vs. Soft
 
