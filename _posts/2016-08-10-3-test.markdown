@@ -1,52 +1,11 @@
 ---
-layout: default
----	
-	<div class="main-navigation">
-		This site is under construction.
-		<br>
-		<!--################################-->
-		[insert some kind of search function here]<br>
-		<!-- this is probably going to be a jQuery UI autocomplete box that throws some string up into the url for another page to GET, just got to figure out how to populate it from all of the tags that my posts should contain -->
-		<br>
-		<!--################################-->
-		RECENT
-		<div class="post-list">
-			{% for post in site.posts limit:3 %}
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-				</br>
-			{% endfor %}
-		 </div>
-	</div>
-
-<!--
-
-TODO: http://www.w3schools.com/html/html_responsive.asp because people web browse with phones
-			the crazy bastards...
-
-Tutorial Stuff
-
-http://jmcglone.com/guides/github-pages/
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+layout: review-3
+title:  "3 star test"
+date:   2016-08-10 18:00:00 -0400
+categories: review
+tags: 3-star
+---
+This than here is an editorial test, them tharn.
 
 <div class="test">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu magna et sapien tempor finibus ut quis lorem. Fusce maximus laoreet suscipit. Mauris congue tellus vel mi gravida, id volutpat nisl rutrum. Suspendisse blandit, turpis vel fringilla dapibus, dui erat porta justo, in feugiat nunc velit vel purus. Aliquam mollis scelerisque ornare. Phasellus vel suscipit lectus. Nunc massa dolor, gravida vitae maximus non, ultricies nec purus. Nunc porta vestibulum urna, ut tristique arcu semper vel. Praesent sed pharetra lectus. Aenean sit amet nisi ut est venenatis dignissim. Pellentesque commodo sapien dolor, nec tincidunt tortor bibendum quis. Aliquam euismod purus id eros posuere condimentum non in est. Duis laoreet lorem vitae fermentum elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis turpis in magna pellentesque pulvinar vitae vitae justo. Maecenas pulvinar magna id metus tempus tristique.<br>
@@ -59,5 +18,3 @@ Quisque eleifend mauris eget mattis bibendum. Curabitur pharetra, quam vitae pha
 <br>
 Ut erat erat, venenatis ac nibh ac, vehicula finibus nibh. Mauris ultricies egestas urna, quis volutpat turpis dignissim sed. Duis ullamcorper libero et nisi porttitor, eget posuere dolor ornare. Maecenas ac dapibus nunc, eget consectetur eros. Fusce eleifend purus vel maximus pulvinar. Aenean tempor ligula nec nisi mollis consequat. Proin tincidunt placerat cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In efficitur semper massa vitae semper. In commodo sodales sem, ut maximus orci vehicula vel. Duis nec facilisis est. Ut interdum tellus vitae neque imperdiet, et hendrerit dolor semper.<br>
 </div>
-
--->

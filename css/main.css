@@ -40,7 +40,20 @@ a:active {
 	font-size:16px;
 }
 
+.main-navigation {
+	text-align:center;
+	font-family:'pixel_font';
+	font-size:24px;
+	padding: 2px;
+}
+
 .navigation {
+	bottom:0;
+	width:800px;
+	position:fixed;
+	z-index:150;
+	height:100px;
+	background-color:black;
 	text-align:center;
 	font-family:'pixel_font';
 	font-size:24px;
@@ -76,6 +89,29 @@ hr{
 #archive{
 	float:right;
 }
+
+#accordion{
+	/*hides the accordion until it's loaded and ready*/
+	display:none;
+}
+
+/* Review specific styles */
+
+/* Review Refused bad text*/
+
+.badtext{
+	color:#700;
+	font-size:32pt;
+	text-align:center;
+}
+
+.title{
+	text-align:center;
+	font-family:'pixel_font';
+	font-size:32px;
+}
+
+/* end of Review Specific Styles*/
 
 /* jQuery UI CSS settings */
 

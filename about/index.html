@@ -3,16 +3,16 @@ layout: default
 ---	
 
 <script>
-$(function() {
-	$("#accordion").accordion({
-	collapsible: true,
-	heightStyle: "content"
-	});
-	}
-);
+	$(function() {
+		$("#accordion").accordion({
+		collapsible: true,
+		heightStyle: "content"
+		}).show(); //undoes the display:hidden; in main.css once the accordion is loaded
+		}
+	);
 </script>
 
-<div id="accordion">
+<div id="accordion" class="accordion">
 <h3>TESTING</h3>
 <div>Here's some content</div>
 <h3>The Rating System</h3>
@@ -51,4 +51,3 @@ I'm probably going to come up with a bunch of short quippy ways of describing th
 <h3>My Computer</h3>
 <div>INFO ABOUT INTEL AND STUFFINGS</div>
 </div>
-
