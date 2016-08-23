@@ -68,11 +68,29 @@ hr{
 	padding: 5px;
 }
 
-.post-link{
+.recent-post{
+	border-radius: 5px;
+	font-weight: normal;
+	margin:10px;
+	border: 1px solid #bbb;
+	background-color:#4f3f4f;
+	padding:3px 10px;
+}
+
+.recent-post-link{
 	float:left;
 }
 
-.post-meta{
+.recent-post-meta{
+	font-size:12pt;
+	float:right;
+}
+
+.archive-post-link{
+	float:left;
+}
+
+.archive-post-meta{
 	font-size:12pt;
 	float:right;
 }
@@ -90,16 +108,9 @@ hr{
 	float:right;
 }
 
-#accordion{
-	/*hides the accordion until it's loaded and ready*/
-	display:none;
-}
-
 /* Review specific styles */
 
-/* Review Refused bad text*/
-
-.badtext{
+.badtext{ /* Review Refused bad text*/
 	color:#700;
 	font-size:32pt;
 	text-align:center;
@@ -115,16 +126,37 @@ hr{
 
 /* jQuery UI CSS settings */
 
+#accordion{
+	/*hides the accordion until it's loaded and ready*/
+	display:none;
+	padding-bottom:120px; /*Makes sure the footer navigation bar doesn't cut off text*/
+}
+
 #accordion .ui-accordion-header {
-	/*background-color: #4f3f4f;*/
 	/*don't delete line below, even though it looks like a placeholder 0 px, makes things smoother, not sure why*/
 	margin:0px;
 	text-align:center;
 	font-family:'pixel_font';
+	border-radius: 5px;
+	font-weight: normal;
+	margin:10px;
+	border: 1px solid #bbb;
+	background-color:#4f3f4f;
 }
+
+/* alternating backgrounds were fun, but seemed unecessary with the switch to more button-y UI elements
+#accordion .ui-accordion-header:nth-of-type(odd){
+	background-color: #4f3f4f;
+}
+
+#accordion .ui-accordion-header:nth-of-type(even){
+	background-color: #000;
+}
+*/
 
 #accordion .ui-accordion-content {
 	color: #bbb;
+	padding: 20px;
 }
 
 #accordion .ui-state-focus{

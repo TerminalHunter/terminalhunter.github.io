@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: archive
 ---
 {% for post in site.posts %}
-<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<a class="archive-post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+<span class="archive-post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 <br>
 {% endfor %}
