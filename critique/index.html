@@ -1,22 +1,59 @@
 ---
 layout: default
 ---	
+	<!-- Search Box Script -->
+	<script>
+		$( function(){
+			var availableTags = [
+			<!-- Maybe switch this over to a categorical autocomplete -->
+			<!-- Tags for the searchbox -->
+			{% for tag in site.tags %}
+				"{{ tag | first }}"{% unless forloop.last %},{% endunless %}
+			{% endfor %}
+			<!-- Categories for the searchbox (necessary?)-->
+			,
+			{% for category in site.categories %}
+				"{{ category | first }}"{% unless forloop.last %},{% endunless %}
+			{% endfor %}
+			<!-- Post Titles for the searchbox -->
+			,
+			{% for post in site.posts %}
+				"{{post.title}}",
+			{% unless forloop.last %}{% endunless %}
+			{% endfor %}
+			];
+			$(".searchbox").autocomplete({
+				source: availableTags,
+				appendTo: "#container",
+				autoFocus: true
+			}).keypress(function(e){
+				if(e.keyCode === 13){
+					window.location.assign("{{site.github.url}}/results?search="+$(this).val());
+				}
+			});
+			
+		});
+	</script>
+	
 	<div class="main-navigation">
-		This site is under construction.
+		Almost Done! But Still being built - expect broken things.<br><br><!--REMINDER: get rid of this line -->
+		SEARCH
 		<br>
-		<!--################################-->
-		[insert some kind of search function here]<br>
-		<!-- this is probably going to be a jQuery UI autocomplete box that throws some string up into the url for another page to GET, just got to figure out how to populate it from all of the tags that my posts should contain -->
+		<input class="searchbox">
+			<div id="container">
+			</div>
 		<br>
 		<!--################################-->
 		RECENT
 		<div class="recent-post-list">
 			{% for post in site.posts limit:3 %}
+			<a href="{{ post.url | prepend: site.baseurl }}">
 			<div class="recent-post">
-				<a class="recent-post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-				<span class="recent-post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-				</br>
+				<div class="recent-post-link">{{ post.title | escape }}</div>
+				<div class="recent-post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+				<br> <!-- this br tag is strangely necessary for current styling, don't get rid of it -->
 			</div>
+			</a>
 			{% endfor %}
 		 </div>
 	</div>
