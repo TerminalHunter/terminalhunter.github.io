@@ -1,6 +1,0 @@
----
-layout: post
-title:  "Here's the first test post"
-date:   2016-08-05 12:00:00 -0500
-categories: test
----

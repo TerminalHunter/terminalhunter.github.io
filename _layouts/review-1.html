@@ -4,5 +4,7 @@ layout: review
 
 <div class="stars">&#9733;&#9734;&#9734;</div>
 <div class="title">{{page.title}}</div>
-
-<div class="post-content">{{content}}</div>
+{% capture newlines %}
+<div class="post-content">{{ content | remove: '<p>' | remove: '</p>' }}</div>
+{% endcapture %}
+{{ newlines | newline_to_br }}

@@ -1,7 +1,13 @@
 ---
 layout: review-3
 title:  "The Stanley Parable"
-date:   2016-08-08 12:00:00 -0500
+date:   2016-08-26 04:00:00 -0500
 categories: review
 tags: 3-star
 ---
+
+Stanley.
+
+Stanley.
+
+Stanley.

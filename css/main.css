@@ -134,7 +134,19 @@ hr{
 	font-size:32px;
 }
 
+.content-holder{
+	padding-bottom:150px; /* Making sure the footer doesn't cut off content */
+}
+
 /* end of Review Specific Styles*/
+
+/*Search Box Functionality*/
+
+.collection{
+	display:none;
+}
+
+/*end of Search Box Functionality*/
 
 /* jQuery UI CSS settings */
 
@@ -143,7 +155,6 @@ hr{
 #accordion{
 	/*hides the accordion until it's loaded and ready*/
 	display:none;
-	padding-bottom:120px; /*Makes sure the footer navigation bar doesn't cut off text*/
 }
 
 #accordion .ui-accordion-header {
