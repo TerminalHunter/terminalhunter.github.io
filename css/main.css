@@ -138,15 +138,15 @@ hr{
 	padding-bottom:150px; /* Making sure the footer doesn't cut off content */
 }
 
-.content-holder a{
+.content-holder .post a{
 	color:#daa520;
 }
 
-.content-holder a:hover{
+.content-holder .post a:hover{
 	color:#ffc;
 }
 
-.content-holder a:visited{
+.content-holder .post a:visited{
 	color:#cab410;
 }
 
