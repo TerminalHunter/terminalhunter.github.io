@@ -138,6 +138,18 @@ hr{
 	padding-bottom:150px; /* Making sure the footer doesn't cut off content */
 }
 
+.content-holder a{
+	color:#daa520;
+}
+
+.content-holder a:hover{
+	color:#ffc;
+}
+
+.content-holder a:visited{
+	color:#cab410;
+}
+
 /* end of Review Specific Styles*/
 
 /*Search Box Functionality*/
@@ -156,6 +168,16 @@ hr{
 	/*hides the accordion until it's loaded and ready*/
 	display:none;
 }
+
+#accordion a{
+	color:#daa520;
+}
+
+#accordion a:hover{
+	color:#ffa;
+}
+
+
 
 #accordion .ui-accordion-header {
 	text-align:center;
