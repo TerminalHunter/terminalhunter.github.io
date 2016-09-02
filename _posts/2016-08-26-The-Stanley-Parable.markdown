@@ -1,9 +1,11 @@
 ---
 layout: review-3
 title:  "The Stanley Parable"
-date:   2016-08-26 04:00:00 -0500
+date:   2016-08-26 04:00:00 -0400
 categories: review
-tags: 3-star
+tags: 
+- 3-star
+- "Galactic Cafe"
 ---
 
 Stanley.

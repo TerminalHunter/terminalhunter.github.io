@@ -3,7 +3,9 @@ layout: review-pending
 title:  "Dwarf Fortress"
 date:   2016-08-26 04:00:00 -0400
 categories: review
-tags: pending
+tags: 
+- pending
+- "Bay 12 Games"
 ---
 I will write this review for real in a bit.
 
