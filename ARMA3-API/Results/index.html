@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<title>></title>
+	<link rel="stylesheet" type="text/css" href="../../dwarfy.css">
+	<link rel="stylesheet" type="text/css" href="../../fonts/fonts.css">
+</head>
+
+<body style="font-family: 'fixedsys_excelsior_3.01Rg';">
+<br><br>
+<div id="Header"><span id="headertext">&nbsp;&nbsp;TerminalHunter's ARMA3 Server Integration Advanced Setup&nbsp;&nbsp;</span></div>
+<div id="Text">
+<div id="Thoughts"><br>
+Something has gone wrong and the Auth server did not return an Access Code. Try again.
+<br><br>
+</div>
+<br>
+</div>
+
+</body>
+
+	<script>
+		if(window.location.hash) {
+			var returnCode = window.location.hash;
+			let lineBreak = "<br>";
+			returnCode = lineBreak.concat(returnCode);
+			document.getElementById("Thoughts").innerHTML = returnCode;
+		} else {
+			//No #, no play.
+		}
+	</script>
+
+</html>
