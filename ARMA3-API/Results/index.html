@@ -21,9 +21,15 @@ Something has gone wrong and the Auth server did not return an Access Code. Try 
 
 	<script>
 		if(window.location.hash) {
-			var returnCode = window.location.hash;
-			let lineBreak = "<br>";
-			returnCode = lineBreak.concat(returnCode);
+			let start = "<br>Your access code is:<br>";
+			let returnCode = window.location.hash;
+			returnCode = returnCode.substring(14);
+			returnCode = returnCode.split("&", 1);
+			let headerStart = "<h1>";
+			returnCode = headerStart.concat(returnCode);
+			returnCode = start.concat(returnCode);
+			let niceMessage = "</h1>Please give your Twitch username and this code to your server operator.";
+			returnCode = returnCode.concat(niceMessage);
 			document.getElementById("Thoughts").innerHTML = returnCode;
 		} else {
 			//No #, no play.
