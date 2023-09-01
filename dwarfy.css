@@ -1,0 +1,79 @@
+@font-face {
+font-family: 'fixedsys';
+src: url(fixedsys500c.ttf);
+}
+
+body{
+	color:white;
+	width : 800px;
+	margin: auto;
+	background: black;
+	font-family: fixedsys;
+}
+
+#Text{
+border-style: solid;
+border-width: 8px;
+border-bottom-width: 14px;
+border-top-style: none;
+border-color: #808080;
+padding: 8px;
+}
+
+#Header{
+	text-align: center;
+	color:black;
+	background:#808080;
+}
+
+#headertext{
+	background:#c0c0c0;
+}
+
+#Familial_Status{
+	color: #00ffff;
+}
+
+#Civilization_Membership{
+	color: #0000ff;
+}
+
+#Age_and_date_of_birth{
+	color: #ffff00;
+}
+
+#Physical_Description{
+
+}
+
+#Physical_Attributes{
+	color:#008000;
+}
+
+#bPhysical_Attributes{
+	color: #800000;
+}
+
+#Preferences{
+	color:#00ff00;
+}
+
+#Mental_Attributes{
+	color:#008000;
+}
+
+#bMental_Attributes{
+	color: #800000;
+}
+
+#Ideals{
+	color: #c0c0c0;
+}
+
+#Beliefs{
+	color: #00ffff;
+}
+
+#Goals{
+	color: #ffff00;
+}
