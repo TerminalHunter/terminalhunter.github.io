@@ -11,7 +11,7 @@
 <div id="Header"><span id="headertext">&nbsp;&nbsp;TerminalHunter's ARMA3 Server Integration Advanced Setup&nbsp;&nbsp;</span></div>
 <div id="Text">
 <div id="Thoughts"><br>
-Something has gone wrong and the Auth server did not return an Access Code. Try again.
+No Access Code found. <a href="../">Try again</a>.
 <br><br>
 </div>
 <br>
@@ -28,7 +28,7 @@ Something has gone wrong and the Auth server did not return an Access Code. Try 
 			let headerStart = "<h1>";
 			returnCode = headerStart.concat(returnCode);
 			returnCode = start.concat(returnCode);
-			let niceMessage = "</h1>Please give your Twitch username and this code to your server operator.";
+			let niceMessage = "</h1>Please give your Twitch username and this code to your server operator.<br><br>To disconnect from this service, go to <a href='https://www.twitch.tv/settings/connections'>your Twitch.tv Settings > Connections > Other Connections</a>";
 			returnCode = returnCode.concat(niceMessage);
 			document.getElementById("Thoughts").innerHTML = returnCode;
 		} else {
