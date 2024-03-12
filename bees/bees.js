@@ -1,4 +1,4 @@
-import { Application, Assets, Container, Sprite } from 'pixi.js';
+import { Application, Assets, Container, Sprite } from 'https://pixijs.download/release/pixi.js';
 
 (async () =>
 {

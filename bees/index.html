@@ -1,9 +1,60 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <script src="pixi.js"></script>
-    <script src="bees.js"></script>
-  </head>
-  <body>
-  </body>
+<head>
+    <title>Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            overflow: hidden;
+        }
+    </style>
+    <script src="http://www.goodboydigital.com/pixijs/examples/1/pixi.js"></script>
+    <!--<script src="pixi.js"></script>-->
+
+</head>
+<body>
+    <script>
+
+    // create an new instance of a pixi stage
+    var stage = new PIXI.Stage(0x66FF99);
+
+    // create a renderer instance
+    var renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight);
+
+    // add the renderer view element to the DOM
+    document.body.appendChild(renderer.view);
+
+    requestAnimFrame( animate );
+
+    // create a texture from an image path
+    var texture = PIXI.Texture.fromImage("sample.png");
+    // create a new Sprite using the texture
+    var player = new PIXI.Sprite(texture);
+
+    // center the sprites anchor point
+    player.anchor.x = 0.5;
+    player.anchor.y = 0.5;
+
+    // move the sprite t the center of the screen
+    player.position.x = 200;
+    player.position.y = 150;
+        stage.addChild(player);
+
+
+    function animate() {
+
+        requestAnimFrame( animate );
+
+        //rotate player
+        player.rotation += 0.1;
+
+        // render the stage   
+        renderer.render(stage);
+    }
+
+    </script>
+
+    </body>
 </html>
