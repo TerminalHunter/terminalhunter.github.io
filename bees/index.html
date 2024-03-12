@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Test</title>
+    <title>BEE TEST!</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #000000;
+            background-color: rgba(0,255,0,255);
             overflow: hidden;
         }
     </style>
@@ -18,7 +18,8 @@
     <script>
 
     // create an new instance of a pixi stage
-    var stage = new PIXI.Stage(0x66FF99);
+    var stage = new PIXI.Stage(0x00ff00);
+    stage.alpha = 0;
 
     // create a renderer instance
     var renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight);
@@ -38,8 +39,8 @@
     player.anchor.y = 0.5;
 
     // move the sprite t the center of the screen
-    player.position.x = 200;
-    player.position.y = 150;
+    player.position.x = 0;
+    player.position.y = 0;
         stage.addChild(player);
 
 
@@ -47,8 +48,11 @@
 
         requestAnimFrame( animate );
 
+
+
         //rotate player
-        player.rotation += 0.1;
+        player.position.y += 0.25;
+
 
         // render the stage   
         renderer.render(stage);
