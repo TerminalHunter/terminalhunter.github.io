@@ -44,8 +44,8 @@
         stage.addChild(player);
 
 
-    player.direction.x = 1;
-    player.direction.y = 1;
+    player.directionx = 1;
+    player.directiony = 1;
 
     function animate() {
 
@@ -54,23 +54,23 @@
         
 
         //rotate player
-        player.position.x += 0.25 * player.direction.x;
-        player.position.y += 0.25 * player.direction.y;
+        player.position.x += 0.25 * player.directionx;
+        player.position.y += 0.25 * player.directiony;
 
-        if (player.position.x < 0) {
-            player.direction.x = 1;
+        if (player.positionx < 0) {
+            player.directionx = 1;
         };
 
         if (player.position.x > window.innerWidth) {
-            player.direction.x = -1;
+            player.directionx = -1;
         };
 
         if (player.position.y < 0) {
-            player.direction.y = 1;
+            player.directiony = 1;
         };
 
         if (player.position.x == window.innerHeight) {
-            player.direction.y = -1;
+            player.directiony = -1;
         };
 
 
