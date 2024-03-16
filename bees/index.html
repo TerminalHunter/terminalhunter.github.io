@@ -54,8 +54,8 @@
         
 
         //rotate player
-        player.position.x += 0.25 * player.directionx;
-        player.position.y += 0.25 * player.directiony;
+        player.position.x += 1.25 * player.directionx;
+        player.position.y += 1.25 * player.directiony;
 
         if (player.positionx < 0) {
             player.directionx = 1;
@@ -69,7 +69,7 @@
             player.directiony = 1;
         };
 
-        if (player.position.x == window.innerHeight) {
+        if (player.position.x > window.innerHeight) {
             player.directiony = -1;
         };
 
