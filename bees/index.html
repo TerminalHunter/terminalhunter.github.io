@@ -57,7 +57,7 @@
         player.position.x += 1.25 * player.directionx;
         player.position.y += 1.25 * player.directiony;
 
-        if (player.positionx < 0) {
+        if (player.position.x < 0) {
             player.directionx = 1;
         };
 
@@ -69,7 +69,7 @@
             player.directiony = 1;
         };
 
-        if (player.position.x > window.innerHeight) {
+        if (player.position.y > window.innerHeight) {
             player.directiony = -1;
         };
 
