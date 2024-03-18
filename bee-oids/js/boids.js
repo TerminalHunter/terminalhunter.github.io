@@ -148,7 +148,7 @@ function addBoid()
     boid.position.y = (maxY + minY) / 2;
 
     boid.velocity = (Math.random() * (boidMaxVelocity - boidMinVelocity)) + boidMinVelocity;
-    boid.rotation = (Math.random() * _360);
+    boid.fakeRotation = (Math.random() * _360);
 
     boid.anchor.x = 0.5;
     boid.anchor.y = 0.5;
@@ -175,7 +175,7 @@ function update()
             flockX = boid.x,
             flockY = boid.y,
             desiredVelocity = boid.velocity,
-            desiredRotation = boid.rotation;
+            desiredRotation = boid.fakeRotation;
 
         boid.alpha = 1;
 
@@ -209,7 +209,7 @@ function update()
             desiredRotation -= 0.1;
         }
 
-        if (boid.rotation > _270 || boid.rotation < _90) {
+        if (boid.fakeRotation > _270 || boid.fakeRotation < _90) {
             if (flockX < boid.x) {
                 desiredRotation += 0.1;
             } else if (flockX > boid.x) {
@@ -223,7 +223,7 @@ function update()
             }
         }
 
-        if (boid.rotation > 0 && boid.rotation < _180) {
+        if (boid.fakeRotation > 0 && boid.fakeRotation < _180) {
             if (flockY < boid.y) {
                 desiredRotation -= 0.1;
             } else if (flockY > boid.y) {
@@ -238,12 +238,12 @@ function update()
         }
 
         // Spin
-        boid.rotation = desiredRotation;
+        boid.fakeRotation = desiredRotation;
 
         // Move
         boid.velocity = desiredVelocity;
-        dx = Math.sin(-boid.rotation) * boid.velocity;
-        dy = Math.cos(-boid.rotation) * boid.velocity;
+        dx = Math.sin(-boid.fakeRotation) * boid.velocity;
+        dy = Math.cos(-boid.fakeRotation) * boid.velocity;
 
         boid.position.x += dx;
         boid.position.y += dy;
@@ -262,7 +262,7 @@ function update()
         }
 
         // Randomise
-        if (Math.random() > 0.9) boid.rotation += (Math.random() - 0.5) / 20;
+        if (Math.random() > 0.9) boid.fakeRotation += (Math.random() - 0.5) / 20;
         boid.velocity += (Math.random() - 0.5) / 10;
 
         // Speed limit
@@ -272,8 +272,8 @@ function update()
             boid.velocity = boidMinVelocity;
         }
 
-        if (boid.rotation > _360) {
-            boid.rotation -= _360;
+        if (boid.fakeRotation > _360) {
+            boid.fakeRotation -= _360;
         }
     }
 
@@ -283,7 +283,7 @@ function update()
 }
 
 function rotationDiff(boid1, boid2) {
-    var diff = boid2.rotation - boid1.rotation;
+    var diff = boid2.fakeRotation - boid1.fakeRotation;
     if (diff > _180) {
         diff -= _180;
         return -diff;
