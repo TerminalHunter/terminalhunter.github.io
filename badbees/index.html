@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>BEE TEST!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0,255,0,255);
+            overflow: hidden;
+        }
+    </style>
+    <script src="https://www.goodboydigital.com/pixijs/examples/1/pixi.js"></script>
+    <!--<script src="pixi.js"></script>-->
+
+</head>
+<body>
+    <script>
+
+    // create an new instance of a pixi stage
+    var stage = new PIXI.Stage(0x00ff00);
+    stage.alpha = 0;
+
+    // create a renderer instance
+    var renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight);
+
+    // add the renderer view element to the DOM
+    document.body.appendChild(renderer.view);
+
+    requestAnimFrame( animate );
+
+    // create a texture from an image path
+    var texture = PIXI.Texture.fromImage("bee.png");
+    // create a new Sprite using the texture
+    var player1 = new PIXI.Sprite(texture);
+    var player2 = new PIXI.Sprite(texture);
+    var player3 = new PIXI.Sprite(texture);
+    var player4 = new PIXI.Sprite(texture);
+    var player5 = new PIXI.Sprite(texture);
+
+    const allTheBees = [player1, player2, player3, player4, player5];
+
+    // center the sprites anchor point
+    function initializeBee(player) {
+        player.anchor.x = 0.5;
+        player.anchor.y = 0.5;
+        player.position.x = Math.floor(Math.random() * 500);
+        player.position.y = Math.floor(Math.random() * 500);
+        stage.addChild(player);
+        player.directionx = 1;
+        player.directiony = 1;
+    }
+
+    allTheBees.forEach(initializeBee);
+
+    function beeLogic(player) {
+        player.position.x += 1.25 * player.directionx + Math.random();
+        player.position.y += 1.25 * player.directiony + Math.random();
+
+        if (player.position.x < 50) {
+            player.directionx = 1;
+        };
+
+        if (player.position.x > (window.innerWidth - 50)) {
+            player.directionx = -1;
+        };
+
+        if (player.position.y < 50) {
+            player.directiony = 1;
+        };
+
+        if (player.position.y > (window.innerHeight - 50)) {
+            player.directiony = -1;
+        };
+    }
+
+    function animate() {
+
+        requestAnimFrame( animate );
+
+        allTheBees.forEach(beeLogic);
+
+        renderer.render(stage);
+    }
+
+    </script>
+
+    </body>
+
+</html>
