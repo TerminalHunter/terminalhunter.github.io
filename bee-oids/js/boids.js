@@ -58,7 +58,7 @@ PIXI.Texture.fromCanvas = function(canvas) {
 
 function onReady() {
     renderer = PIXI.autoDetectRenderer(800, 600);
-    stage = new PIXI.Stage(0xFFFFFF);
+    stage = new PIXI.Stage(0x00FF00);
 
     amount = (renderer instanceof PIXI.WebGLRenderer) ? 50 : 5;
 
@@ -114,8 +114,8 @@ function resize()
     var width = $(window).width();
     var height = $(window).height();
 
-    if (width > 800) width  = 800;
-    if (height > 600) height = 600;
+    if (width > 1920) width  = 1920;
+    if (height > 1080) height = 1080;
 
     maxX = width;
     minX = 0;
