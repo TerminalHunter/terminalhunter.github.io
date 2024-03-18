@@ -188,7 +188,7 @@ function update()
                 flockVelocity += boids[j].velocity;
                 flockRotation += rotationDiff(boid, boids[j]);
                 if (j == 0) {
-                    boid.alpha = 0.5;
+                    boid.alpha = 1;
                 }
             }
         }
