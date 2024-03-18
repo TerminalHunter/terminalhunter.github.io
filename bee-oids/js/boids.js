@@ -9,8 +9,8 @@ $(document).ready(onReady)
 $(window).resize(resize)
 window.onorientationchange = resize;
 
-var width = 480,
-    height = 320,
+var width = 1920,
+    height = 1080,
     boidTexture,
     boids = [],
     maxX = width,
