@@ -44,8 +44,8 @@
     function initializeBee(player) {
         player.anchor.x = 0.5;
         player.anchor.y = 0.5;
-        player.position.x = 0;
-        player.position.y = 0;
+        player.position.x = Math.floor(Math.random() * 500);
+        player.position.y = Math.floor(Math.random() * 500);
         stage.addChild(player);
         player.directionx = 1;
         player.directiony = 1;
