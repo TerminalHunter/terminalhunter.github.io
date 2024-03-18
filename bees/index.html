@@ -53,10 +53,7 @@
 
     allTheBees.forEach(initializeBee);
 
-    function animate() {
-
-        requestAnimFrame( animate );
-
+    function beeLogic(player) {
         player.position.x += 1.25 * player.directionx;
         player.position.y += 1.25 * player.directiony;
 
@@ -75,6 +72,13 @@
         if (player.position.y > (window.innerHeight - 50)) {
             player.directiony = -1;
         };
+    }
+
+    function animate() {
+
+        requestAnimFrame( animate );
+
+        allTheBees.forEach(beeLogic);
 
         renderer.render(stage);
     }
