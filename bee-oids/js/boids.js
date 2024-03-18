@@ -57,7 +57,7 @@ PIXI.Texture.fromCanvas = function(canvas) {
 };
 
 function onReady() {
-    renderer = PIXI.autoDetectRenderer(800, 600);
+    renderer = PIXI.autoDetectRenderer(1920, 1080);
     stage = new PIXI.Stage(0x00FF00);
 
     amount = (renderer instanceof PIXI.WebGLRenderer) ? 50 : 5;
