@@ -54,8 +54,8 @@
     allTheBees.forEach(initializeBee);
 
     function beeLogic(player) {
-        player.position.x += 1.25 * player.directionx;
-        player.position.y += 1.25 * player.directiony;
+        player.position.x += 1.25 * player.directionx + Math.random();
+        player.position.y += 1.25 * player.directiony + Math.random();
 
         if (player.position.x < 50) {
             player.directionx = 1;
