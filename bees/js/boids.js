@@ -182,7 +182,7 @@ function update()
         boid.alpha = 1;
 
         if (boid.flockRadius < 50) {
-            boid.flockRadius += 1;
+            boid.flockRadius += 0.1;
         }
 
         for (var j = 0; j < boids.length; j++) {
