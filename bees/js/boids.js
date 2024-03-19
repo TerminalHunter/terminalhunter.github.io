@@ -248,17 +248,21 @@ function update()
         boid.position.x += dx;
         boid.position.y += dy;
 
-        // Wrap
+        // Wrap that we've turned into a bump
         if (boid.position.x > maxX) {
-            boid.position.x = minX - maxX + boid.position.x;
+            //boid.position.x = minX - maxX + boid.position.x;
+            boid.fakeRotation += 180;
         } else if (boid.position.x < minX) {
-            boid.position.x = maxX + boid.position.x;
+            //boid.position.x = maxX + boid.position.x;
+            boid.fakeRotation += 180;
         }
 
         if (boid.position.y > maxY) {
-            boid.position.y = minY - maxY + boid.position.y;
+            //boid.position.y = minY - maxY + boid.position.y;
+            boid.fakeRotation += 180;
         } else if (boid.position.y < minY) {
-            boid.position.y = maxY + boid.position.y;
+            //boid.position.y = maxY + boid.position.y;
+            boid.fakeRotation += 180;
         }
 
         // Randomise
