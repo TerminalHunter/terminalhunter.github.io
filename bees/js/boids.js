@@ -153,6 +153,8 @@ function addBoid()
     boid.anchor.x = 0.5;
     boid.anchor.y = 0.5;
 
+    boid.flockRadius = 50;
+
     boids.push(boid);
 
     container.addChild(boid);
@@ -179,11 +181,15 @@ function update()
 
         boid.alpha = 1;
 
+        if (boid.flockRadius < 50) {
+            boid.flockRadius += 1;
+        }
+
         for (var j = 0; j < boids.length; j++) {
             if (i == j) {
                 continue;
             }
-            if (isWithinRadius(boid, boids[j], 50)) {
+            if (isWithinRadius(boid, boids[j], boid.flockRadius)) {
                 neighbours.push(boids[j]);
                 flockVelocity += boids[j].velocity;
                 flockRotation += rotationDiff(boid, boids[j]);
@@ -252,17 +258,21 @@ function update()
         if (boid.position.x > maxX) {
             //boid.position.x = minX - maxX + boid.position.x;
             boid.fakeRotation += 180;
+            boid.flockRadius = 1;
         } else if (boid.position.x < minX) {
             //boid.position.x = maxX + boid.position.x;
             boid.fakeRotation += 180;
+            boid.flockRadius = 1;
         }
 
         if (boid.position.y > maxY) {
             //boid.position.y = minY - maxY + boid.position.y;
             boid.fakeRotation += 180;
+            boid.flockRadius = 1;
         } else if (boid.position.y < minY) {
             //boid.position.y = maxY + boid.position.y;
             boid.fakeRotation += 180;
+            boid.flockRadius = 1;
         }
 
         // Randomise
