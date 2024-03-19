@@ -259,20 +259,24 @@ function update()
             //boid.position.x = minX - maxX + boid.position.x;
             boid.fakeRotation += 180;
             boid.flockRadius = 1;
+            boid.position.x -= 2;
         } else if (boid.position.x < minX) {
             //boid.position.x = maxX + boid.position.x;
             boid.fakeRotation += 180;
             boid.flockRadius = 1;
+            boid.position.x += 2;
         }
 
         if (boid.position.y > maxY) {
             //boid.position.y = minY - maxY + boid.position.y;
             boid.fakeRotation += 180;
             boid.flockRadius = 1;
+            boid.position.y -= 2;
         } else if (boid.position.y < minY) {
             //boid.position.y = maxY + boid.position.y;
             boid.fakeRotation += 180;
             boid.flockRadius = 1;
+            boid.position.y += 2;
         }
 
         // Randomise
